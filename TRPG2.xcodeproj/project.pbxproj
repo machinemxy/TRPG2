@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2293387126CA4F8900FC6596 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293387026CA4F8900FC6596 /* UserDefaultsKey.swift */; };
+		2293387426CA564F00FC6596 /* RollAbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293387326CA564F00FC6596 /* RollAbilitiesView.swift */; };
+		2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298D8F926CAB078000A22F5 /* KeyValueView.swift */; };
+		2298D8FD26CAB1C0000A22F5 /* Cha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298D8FC26CAB1C0000A22F5 /* Cha.swift */; };
 		22AF6A2825AB3F050035CC95 /* TRPG2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF6A2725AB3F050035CC95 /* TRPG2App.swift */; };
-		22AF6A2A25AB3F050035CC95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF6A2925AB3F050035CC95 /* ContentView.swift */; };
 		22AF6A2C25AB3F060035CC95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AF6A2B25AB3F060035CC95 /* Assets.xcassets */; };
 		22AF6A2F25AB3F060035CC95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AF6A2E25AB3F060035CC95 /* Preview Assets.xcassets */; };
 		22AF6A3A25AB3F060035CC95 /* TRPG2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF6A3925AB3F060035CC95 /* TRPG2Tests.swift */; };
@@ -33,9 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2293387026CA4F8900FC6596 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		2293387326CA564F00FC6596 /* RollAbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollAbilitiesView.swift; sourceTree = "<group>"; };
+		2298D8F926CAB078000A22F5 /* KeyValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueView.swift; sourceTree = "<group>"; };
+		2298D8FC26CAB1C0000A22F5 /* Cha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cha.swift; sourceTree = "<group>"; };
 		22AF6A2425AB3F050035CC95 /* TRPG2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRPG2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AF6A2725AB3F050035CC95 /* TRPG2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPG2App.swift; sourceTree = "<group>"; };
-		22AF6A2925AB3F050035CC95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22AF6A2B25AB3F060035CC95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22AF6A2E25AB3F060035CC95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22AF6A3025AB3F060035CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +78,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2293386F26CA4F7300FC6596 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2293387026CA4F8900FC6596 /* UserDefaultsKey.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2293387226CA534500FC6596 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2293387326CA564F00FC6596 /* RollAbilitiesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2298D8F826CAAF20000A22F5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2298D8F926CAB078000A22F5 /* KeyValueView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2298D8FB26CAB1B5000A22F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2298D8FC26CAB1C0000A22F5 /* Cha.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		22AF6A1B25AB3F050035CC95 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +133,11 @@
 		22AF6A2625AB3F050035CC95 /* TRPG2 */ = {
 			isa = PBXGroup;
 			children = (
+				2298D8FB26CAB1B5000A22F5 /* Models */,
+				2298D8F826CAAF20000A22F5 /* Components */,
+				2293387226CA534500FC6596 /* Views */,
+				2293386F26CA4F7300FC6596 /* Constants */,
 				22AF6A2725AB3F050035CC95 /* TRPG2App.swift */,
-				22AF6A2925AB3F050035CC95 /* ContentView.swift */,
 				22AF6A2B25AB3F060035CC95 /* Assets.xcassets */,
 				22AF6A3025AB3F060035CC95 /* Info.plist */,
 				22AF6A2D25AB3F060035CC95 /* Preview Content */,
@@ -259,7 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22AF6A2A25AB3F050035CC95 /* ContentView.swift in Sources */,
+				2293387126CA4F8900FC6596 /* UserDefaultsKey.swift in Sources */,
+				2293387426CA564F00FC6596 /* RollAbilitiesView.swift in Sources */,
+				2298D8FD26CAB1C0000A22F5 /* Cha.swift in Sources */,
+				2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */,
 				22AF6A2825AB3F050035CC95 /* TRPG2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct TRPG2App: App {
+    @AppStorage(UserDefaultsKey.isNewGame) private var isNewGame = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isNewGame {
+                RollAbilitiesView()
+            } else {
+                Text("fuck")
+            }
         }
     }
 }
