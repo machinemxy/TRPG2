@@ -14,7 +14,7 @@ struct TRPG2App: App {
     var body: some Scene {
         WindowGroup {
             if isNewGame {
-                RollAbilitiesView()
+                RollAbilitiesView(isNewGame: $isNewGame)
             } else {
                 Text("fuck")
             }
