@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RollAbilitiesView: View {
     @Binding var isNewGame: Bool
-    @ObservedObject private var caoCao = Creature()
+    @ObservedObject private var caoCao = Pc()
     
     var body: some View {
         NavigationView {

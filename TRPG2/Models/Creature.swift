@@ -2,17 +2,22 @@
 //  Creature.swift
 //  TRPG2
 //
-//  Created by Ma Xueyuan on 2021/08/16.
+//  Created by Ma Xueyuan on 2021/08/18.
 //
 
 import Foundation
 
-class Creature: ObservableObject {
-    @Published var name = "Cao Cao"
-    @Published var str = 10
-    @Published var dex = 10
-    @Published var con = 10
-    @Published var int = 10
-    @Published var wis = 10
-    @Published var cha = 10
+protocol Creature: AnyObject {
+    var name: String { get }
+    var str: Int { get }
+    var dex: Int { get }
+    var con: Int { get }
+    var int: Int { get }
+    var wis: Int { get }
+    var cha: Int { get }
+    var mhp: Int { get }
+    var hp: Int { get set }
+    var hb: Int { get }
+    var damage: Damage { get }
+    var ac: Int { get }
 }
