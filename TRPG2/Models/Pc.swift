@@ -9,7 +9,7 @@ import Foundation
 
 class Pc: ObservableObject, Creature, Codable {
     // MARK: properties
-    @Published var name = "Cao Cao"
+    @Published var name = ""
     @Published var str = 10
     @Published var dex = 10
     @Published var con = 10
@@ -23,7 +23,7 @@ class Pc: ObservableObject, Creature, Codable {
     @Published var weapon: Weapon?
     @Published var shield: Shield?
     @Published var armor: Armor?
-    @Published var ps = [PassiveSkill]()
+    @Published var ps: [PassiveSkill] = [.persuation]
     @Published var money = 0
     
     // MARK: codable

@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct RollAbilitiesView: View {
-    @Binding var isNewGame: Bool
-    @ObservedObject private var caoCao = Pc()
+    @ObservedObject var pc: Pc
     
     var body: some View {
         NavigationView {
@@ -17,21 +16,21 @@ struct RollAbilitiesView: View {
                 NavigationLink(
                     destination: CaoCaoIntroView(),
                     label: {
-                        Text(caoCao.name)
+                        Text("Cao Cao")
                             .fontWeight(.bold)
                     })
-                KeyValueView(key: "Strength:", value: "\(caoCao.str)")
-                KeyValueView(key: "Dexterity", value: "\(caoCao.dex)")
-                KeyValueView(key: "Constitution", value: "\(caoCao.con)")
-                KeyValueView(key: "Intelligence", value: "\(caoCao.int)")
-                KeyValueView(key: "Wisdom", value: "\(caoCao.wis)")
-                KeyValueView(key: "Charisma", value: "\(caoCao.cha)")
+                KeyValueView(key: "Strength:", value: "\(pc.str)")
+                KeyValueView(key: "Dexterity", value: "\(pc.dex)")
+                KeyValueView(key: "Constitution", value: "\(pc.con)")
+                KeyValueView(key: "Intelligence", value: "\(pc.int)")
+                KeyValueView(key: "Wisdom", value: "\(pc.wis)")
+                KeyValueView(key: "Charisma", value: "\(pc.cha)")
                 Button("Roll") {
                     rollAbilities()
                 }
                 Button("Confirm") {
                     withAnimation {
-                        isNewGame = false
+                        pc.name = "Cao Cao"
                     }
                 }
             }
@@ -47,12 +46,12 @@ struct RollAbilitiesView: View {
             array.append(rollResult)
         }
         array.sort { $0 > $1 }
-        caoCao.cha = array[0]
-        caoCao.int = array[1]
-        caoCao.wis = array[2]
-        caoCao.str = array[3]
-        caoCao.dex = array[4]
-        caoCao.con = array[5]
+        pc.cha = array[0]
+        pc.int = array[1]
+        pc.wis = array[2]
+        pc.str = array[3]
+        pc.dex = array[4]
+        pc.con = array[5]
     }
     
     private func rollAbility() -> Int {
@@ -67,6 +66,6 @@ struct RollAbilitiesView: View {
 
 struct RollAbilitiesView_Previews: PreviewProvider {
     static var previews: some View {
-        RollAbilitiesView(isNewGame: .constant(true))
+        RollAbilitiesView(pc: Pc())
     }
 }

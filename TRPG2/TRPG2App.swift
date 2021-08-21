@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct TRPG2App: App {
-    @AppStorage(UserDefaultsKey.isNewGame) private var isNewGame = true
+    @ObservedObject private var pc = FileManager.default.load(from: .pc) ?? Pc()
     
     var body: some Scene {
         WindowGroup {
-            if isNewGame {
-                RollAbilitiesView(isNewGame: $isNewGame)
+            if pc.name.isEmpty {
+                RollAbilitiesView(pc: pc)
             } else {
                 Text("fuck")
             }

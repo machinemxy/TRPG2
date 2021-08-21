@@ -15,10 +15,10 @@
 		228297D526CD53B700C1D2C3 /* IntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297D426CD53B700C1D2C3 /* IntExt.swift */; };
 		228297D726CD557B00C1D2C3 /* Damage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297D626CD557B00C1D2C3 /* Damage.swift */; };
 		228297D926CD593800C1D2C3 /* PassiveSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297D826CD593800C1D2C3 /* PassiveSkill.swift */; };
-		2293387126CA4F8900FC6596 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293387026CA4F8900FC6596 /* UserDefaultsKey.swift */; };
 		2293387426CA564F00FC6596 /* RollAbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293387326CA564F00FC6596 /* RollAbilitiesView.swift */; };
 		2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298D8F926CAB078000A22F5 /* KeyValueView.swift */; };
 		2298D8FD26CAB1C0000A22F5 /* Pc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298D8FC26CAB1C0000A22F5 /* Pc.swift */; };
+		229F93C026D11C8D00EA90BE /* FileManagerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F93BF26D11C8D00EA90BE /* FileManagerExt.swift */; };
 		22AF6A2825AB3F050035CC95 /* TRPG2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF6A2725AB3F050035CC95 /* TRPG2App.swift */; };
 		22AF6A2C25AB3F060035CC95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AF6A2B25AB3F060035CC95 /* Assets.xcassets */; };
 		22AF6A2F25AB3F060035CC95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AF6A2E25AB3F060035CC95 /* Preview Assets.xcassets */; };
@@ -52,10 +52,10 @@
 		228297D426CD53B700C1D2C3 /* IntExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExt.swift; sourceTree = "<group>"; };
 		228297D626CD557B00C1D2C3 /* Damage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Damage.swift; sourceTree = "<group>"; };
 		228297D826CD593800C1D2C3 /* PassiveSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassiveSkill.swift; sourceTree = "<group>"; };
-		2293387026CA4F8900FC6596 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		2293387326CA564F00FC6596 /* RollAbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollAbilitiesView.swift; sourceTree = "<group>"; };
 		2298D8F926CAB078000A22F5 /* KeyValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueView.swift; sourceTree = "<group>"; };
 		2298D8FC26CAB1C0000A22F5 /* Pc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pc.swift; sourceTree = "<group>"; };
+		229F93BF26D11C8D00EA90BE /* FileManagerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExt.swift; sourceTree = "<group>"; };
 		22AF6A2425AB3F050035CC95 /* TRPG2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRPG2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AF6A2725AB3F050035CC95 /* TRPG2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPG2App.swift; sourceTree = "<group>"; };
 		22AF6A2B25AB3F060035CC95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				228297D426CD53B700C1D2C3 /* IntExt.swift */,
+				229F93BF26D11C8D00EA90BE /* FileManagerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -105,7 +106,6 @@
 		2293386F26CA4F7300FC6596 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				2293387026CA4F8900FC6596 /* UserDefaultsKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -332,7 +332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2293387126CA4F8900FC6596 /* UserDefaultsKey.swift in Sources */,
 				228297D226CD4A7800C1D2C3 /* Armor.swift in Sources */,
 				228297D726CD557B00C1D2C3 /* Damage.swift in Sources */,
 				228297CE26CD265800C1D2C3 /* Weapon.swift in Sources */,
@@ -341,6 +340,7 @@
 				2298D8FD26CAB1C0000A22F5 /* Pc.swift in Sources */,
 				228297D026CD4A5200C1D2C3 /* Shield.swift in Sources */,
 				228297CC26CD220800C1D2C3 /* Creature.swift in Sources */,
+				229F93C026D11C8D00EA90BE /* FileManagerExt.swift in Sources */,
 				228297D926CD593800C1D2C3 /* PassiveSkill.swift in Sources */,
 				226EFB9126CBBE3F002FFBC5 /* CaoCaoIntroView.swift in Sources */,
 				2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */,
