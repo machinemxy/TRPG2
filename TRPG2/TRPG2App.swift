@@ -11,7 +11,7 @@ import SwiftUI
 struct TRPG2App: App {
     @ObservedObject private var pc = FileManager.default.load(from: .pc) ?? Pc()
     
-    var body: some Scene {
+    var body: some SwiftUI.Scene {
         WindowGroup {
             if pc.name.isEmpty {
                 RollAbilitiesView(pc: pc)

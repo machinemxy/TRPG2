@@ -17,7 +17,7 @@ extension FileManager {
         let url = getDocumentsDirectory().appendingPathComponent(fileName.rawValue)
 
         guard let data = try? Data(contentsOf: url) else {
-            print("Cannnot find file \(fileName.rawValue).")
+            print("File \(fileName.rawValue) does not exist.")
             return nil
         }
         
