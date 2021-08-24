@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		221F785926D3B21200042ACF /* AppearCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F785826D3B21200042ACF /* AppearCondition.swift */; };
-		221F785B26D3B5CD00042ACF /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F785A26D3B5CD00042ACF /* Scene.swift */; };
+		221F785B26D3B5CD00042ACF /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F785A26D3B5CD00042ACF /* Destination.swift */; };
 		221F785D26D3B8C800042ACF /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F785C26D3B8C800042ACF /* Choice.swift */; };
 		221F785F26D3BAD800042ACF /* NormalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F785E26D3BAD800042ACF /* NormalScene.swift */; };
-		221F786126D3DA1600042ACF /* NormalSceneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F786026D3DA1600042ACF /* NormalSceneName.swift */; };
-		221F786426D3DC2400042ACF /* NormalSceneSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F786326D3DC2400042ACF /* NormalSceneSelector.swift */; };
+		221F786126D3DA1600042ACF /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F786026D3DA1600042ACF /* UserDefaultsKey.swift */; };
+		222039C326D518CA00940EB8 /* gameOver_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 222039C226D518CA00940EB8 /* gameOver_normal.json */; };
+		222039C626D51B1E00940EB8 /* outOfPalace_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 222039C526D51B1E00940EB8 /* outOfPalace_normal.json */; };
+		222039CA26D52CCE00940EB8 /* BundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222039C926D52CCE00940EB8 /* BundleExt.swift */; };
+		222039CC26D52FE500940EB8 /* NormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222039CB26D52FE500940EB8 /* NormalView.swift */; };
+		222039CE26D53DFC00940EB8 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222039CD26D53DFC00940EB8 /* ChoiceView.swift */; };
 		226EFB9126CBBE3F002FFBC5 /* CaoCaoIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EFB9026CBBE3F002FFBC5 /* CaoCaoIntroView.swift */; };
 		228297CC26CD220800C1D2C3 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297CB26CD220800C1D2C3 /* Creature.swift */; };
 		228297CE26CD265800C1D2C3 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297CD26CD265800C1D2C3 /* Weapon.swift */; };
@@ -52,11 +56,15 @@
 
 /* Begin PBXFileReference section */
 		221F785826D3B21200042ACF /* AppearCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearCondition.swift; sourceTree = "<group>"; };
-		221F785A26D3B5CD00042ACF /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		221F785A26D3B5CD00042ACF /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		221F785C26D3B8C800042ACF /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		221F785E26D3BAD800042ACF /* NormalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalScene.swift; sourceTree = "<group>"; };
-		221F786026D3DA1600042ACF /* NormalSceneName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalSceneName.swift; sourceTree = "<group>"; };
-		221F786326D3DC2400042ACF /* NormalSceneSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalSceneSelector.swift; sourceTree = "<group>"; };
+		221F786026D3DA1600042ACF /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		222039C226D518CA00940EB8 /* gameOver_normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameOver_normal.json; sourceTree = "<group>"; };
+		222039C526D51B1E00940EB8 /* outOfPalace_normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = outOfPalace_normal.json; sourceTree = "<group>"; };
+		222039C926D52CCE00940EB8 /* BundleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExt.swift; sourceTree = "<group>"; };
+		222039CB26D52FE500940EB8 /* NormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalView.swift; sourceTree = "<group>"; };
+		222039CD26D53DFC00940EB8 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		226EFB9026CBBE3F002FFBC5 /* CaoCaoIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoCaoIntroView.swift; sourceTree = "<group>"; };
 		228297CB26CD220800C1D2C3 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		228297CD26CD265800C1D2C3 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -111,9 +119,26 @@
 		221F786226D3DC0000042ACF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				221F786326D3DC2400042ACF /* NormalSceneSelector.swift */,
+				222039C426D51AF900940EB8 /* outOfPalace */,
+				222039C126D5189400940EB8 /* gameOver */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		222039C126D5189400940EB8 /* gameOver */ = {
+			isa = PBXGroup;
+			children = (
+				222039C226D518CA00940EB8 /* gameOver_normal.json */,
+			);
+			path = gameOver;
+			sourceTree = "<group>";
+		};
+		222039C426D51AF900940EB8 /* outOfPalace */ = {
+			isa = PBXGroup;
+			children = (
+				222039C526D51B1E00940EB8 /* outOfPalace_normal.json */,
+			);
+			path = outOfPalace;
 			sourceTree = "<group>";
 		};
 		228297D326CD532200C1D2C3 /* Extensions */ = {
@@ -121,6 +146,7 @@
 			children = (
 				228297D426CD53B700C1D2C3 /* IntExt.swift */,
 				229F93BF26D11C8D00EA90BE /* FileManagerExt.swift */,
+				222039C926D52CCE00940EB8 /* BundleExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -128,7 +154,7 @@
 		2293386F26CA4F7300FC6596 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				221F786026D3DA1600042ACF /* NormalSceneName.swift */,
+				221F786026D3DA1600042ACF /* UserDefaultsKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -138,6 +164,7 @@
 			children = (
 				2293387326CA564F00FC6596 /* RollAbilitiesView.swift */,
 				226EFB9026CBBE3F002FFBC5 /* CaoCaoIntroView.swift */,
+				222039CB26D52FE500940EB8 /* NormalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				2298D8F926CAB078000A22F5 /* KeyValueView.swift */,
+				222039CD26D53DFC00940EB8 /* ChoiceView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -162,7 +190,7 @@
 				228297D826CD593800C1D2C3 /* PassiveSkill.swift */,
 				229F93C126D1436200EA90BE /* GameData.swift */,
 				221F785826D3B21200042ACF /* AppearCondition.swift */,
-				221F785A26D3B5CD00042ACF /* Scene.swift */,
+				221F785A26D3B5CD00042ACF /* Destination.swift */,
 				221F785C26D3B8C800042ACF /* Choice.swift */,
 				221F785E26D3BAD800042ACF /* NormalScene.swift */,
 			);
@@ -336,6 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AF6A2F25AB3F060035CC95 /* Preview Assets.xcassets in Resources */,
+				222039C326D518CA00940EB8 /* gameOver_normal.json in Resources */,
+				222039C626D51B1E00940EB8 /* outOfPalace_normal.json in Resources */,
 				22AF6A2C25AB3F060035CC95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,18 +395,20 @@
 				228297D726CD557B00C1D2C3 /* Damage.swift in Sources */,
 				228297CE26CD265800C1D2C3 /* Weapon.swift in Sources */,
 				228297D526CD53B700C1D2C3 /* IntExt.swift in Sources */,
-				221F785B26D3B5CD00042ACF /* Scene.swift in Sources */,
+				221F785B26D3B5CD00042ACF /* Destination.swift in Sources */,
 				2293387426CA564F00FC6596 /* RollAbilitiesView.swift in Sources */,
 				2298D8FD26CAB1C0000A22F5 /* Pc.swift in Sources */,
 				228297D026CD4A5200C1D2C3 /* Shield.swift in Sources */,
-				221F786426D3DC2400042ACF /* NormalSceneSelector.swift in Sources */,
 				228297CC26CD220800C1D2C3 /* Creature.swift in Sources */,
+				222039CC26D52FE500940EB8 /* NormalView.swift in Sources */,
+				222039CA26D52CCE00940EB8 /* BundleExt.swift in Sources */,
 				221F785F26D3BAD800042ACF /* NormalScene.swift in Sources */,
 				221F785926D3B21200042ACF /* AppearCondition.swift in Sources */,
+				222039CE26D53DFC00940EB8 /* ChoiceView.swift in Sources */,
 				229F93C026D11C8D00EA90BE /* FileManagerExt.swift in Sources */,
 				228297D926CD593800C1D2C3 /* PassiveSkill.swift in Sources */,
 				221F785D26D3B8C800042ACF /* Choice.swift in Sources */,
-				221F786126D3DA1600042ACF /* NormalSceneName.swift in Sources */,
+				221F786126D3DA1600042ACF /* UserDefaultsKey.swift in Sources */,
 				226EFB9126CBBE3F002FFBC5 /* CaoCaoIntroView.swift in Sources */,
 				229F93C226D1436200EA90BE /* GameData.swift in Sources */,
 				2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */,

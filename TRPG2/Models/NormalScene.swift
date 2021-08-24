@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct NormalScene {
+struct NormalScene: Codable {
     let name: String
     let detail: String
     let choices: [Choice]
+    
+    static let fallBack = NormalScene(name: "Error", detail: "Invalid normal scene.", choices: [])
 }

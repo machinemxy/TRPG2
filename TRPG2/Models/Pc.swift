@@ -9,7 +9,7 @@ import Foundation
 
 class Pc: ObservableObject, Creature, Codable {
     // MARK: properties
-    @Published var name = ""
+    @Published var name = "Cao Cao"
     @Published var str = 10
     @Published var dex = 10
     @Published var con = 10

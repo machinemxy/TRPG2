@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RollAbilitiesView: View {
-    @ObservedObject var pc: Pc
+    @EnvironmentObject var pc: Pc
+    @Binding var isNewGame: Bool
     
     var body: some View {
         NavigationView {
@@ -29,8 +30,9 @@ struct RollAbilitiesView: View {
                     rollAbilities()
                 }
                 Button("Confirm") {
+                    _ = FileManager.default.save(pc, to: .pc)
                     withAnimation {
-                        pc.name = "Cao Cao"
+                        isNewGame = false
                     }
                 }
             }
@@ -66,6 +68,7 @@ struct RollAbilitiesView: View {
 
 struct RollAbilitiesView_Previews: PreviewProvider {
     static var previews: some View {
-        RollAbilitiesView(pc: Pc())
+        RollAbilitiesView(isNewGame: .constant(true))
+            .environmentObject(Pc())
     }
 }

@@ -1,0 +1,8 @@
+{
+  "gameOver":
+  {
+    "name":"Game Over",
+    "detail":"Please reload save data or restart the game.",
+    "choices":[]
+  }
+}

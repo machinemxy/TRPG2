@@ -7,14 +7,18 @@
 
 import Foundation
 
-struct Choice {
+struct Choice: Codable, Identifiable {
     let choiceType: ChoiceType
     let name: String
-    let destination: Scene
+    let destination: Destination
     let appearCondition: AppearCondition?
+    
+    var id: String { name }
+    
+    static let example = Choice(choiceType: .action, name: "Back", destination: Destination(sceneType: nil, sceneName: nil, subSceneName: "outOfPalace"), appearCondition: nil)
 }
 
-enum ChoiceType {
+enum ChoiceType: String, Codable {
     case person
     case object
     case action

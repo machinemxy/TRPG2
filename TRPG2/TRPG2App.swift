@@ -9,14 +9,23 @@ import SwiftUI
 
 @main
 struct TRPG2App: App {
+    @AppStorage(UserDefaultsKey.isNewGame) private var isNewGame = true
     @ObservedObject private var pc = FileManager.default.load(from: .pc) ?? Pc()
+    @ObservedObject private var gameData = FileManager.default.load(from: .gameData) ?? GameData()
+    
+    var normalScenes: Dictionary<String, NormalScene> {
+        let fileName = gameData.sceneName + "_normal"
+        return Bundle.main.load(from: fileName) ?? Dictionary()
+    }
     
     var body: some SwiftUI.Scene {
         WindowGroup {
-            if pc.name.isEmpty {
-                RollAbilitiesView(pc: pc)
-            } else {
-                Text("fuck")
+            if isNewGame {
+                RollAbilitiesView(isNewGame: $isNewGame)
+                    .environmentObject(pc)
+            } else if gameData.sceneType == .normal {
+                NormalView(normalScenes: normalScenes)
+                    .environmentObject(gameData)
             }
         }
     }

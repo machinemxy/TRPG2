@@ -1,0 +1,28 @@
+{
+  "outOfPalace":
+  {
+    "name":"Out of Palace",
+    "detail":"The road to the Palace. Some ministers gather here to exchange their ideas",
+    "choices":
+    [
+      {
+        "choiceType":"person",
+        "name":"Minister1",
+        "destination":{"subSceneName":"minister1"}
+      }
+    ]
+  },
+  "minister1":
+  {
+    "name":"Minister1:",
+    "detail":"\"Since Dong Zhuo seized the power, he killed several people opposed him.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"End Conversation",
+        "destination":{"subSceneName":"outOfPalace"}
+      }
+    ]
+  }
+}

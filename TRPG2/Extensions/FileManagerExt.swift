@@ -27,6 +27,7 @@ extension FileManager {
             return nil
         }
         
+        print("decoded \(fileName.rawValue)")
         return loaded
     }
     

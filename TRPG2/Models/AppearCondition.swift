@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppearCondition {
+struct AppearCondition: Codable {
     let variable: Int
     let value: Int
 }
