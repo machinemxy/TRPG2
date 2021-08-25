@@ -10,12 +10,11 @@ import SwiftUI
 struct NormalView: View {
     @EnvironmentObject var pc: Pc
     @EnvironmentObject var gameData: GameData
-    let normalScenes: Dictionary<String, NormalScene>
     
     var scene: NormalScene {
-        normalScenes[gameData.subSceneName] ?? NormalScene.fallBack
+		gameData.normalScenes[gameData.subSceneName] ?? NormalScene.fallBack
     }
-    
+
     var visibleChoices: [Choice] {
         scene.choices.filter { choice in
             guard let appearCondition = choice.appearCondition else { return true }
@@ -27,14 +26,16 @@ struct NormalView: View {
         NavigationView {
             VStack {
                 ScrollView(.vertical, showsIndicators: true, content: {
-                    Text(scene.detail)
-                        .font(.footnote)
-                        .padding()
-                    
-                    ForEach(visibleChoices) { choice in
-                        ChoiceView(choice: choice)
-                            .padding(.horizontal)
-                    }
+					VStack(alignment: .leading, spacing: 8, content: {
+						Text(scene.detail)
+							.font(.footnote)
+							.padding(.horizontal)
+						
+						ForEach(visibleChoices) { choice in
+							ChoiceView(choice: choice)
+								.padding(.horizontal)
+						}
+					})
                 })
                 
                 Spacer()
@@ -47,7 +48,7 @@ struct NormalView: View {
 
 struct NormalView_Previews: PreviewProvider {
     static var previews: some View {
-        NormalView(normalScenes: Bundle.main.load(from: "outOfPalace_normal")!)
+        NormalView()
             .environmentObject(Pc())
             .environmentObject(GameData())
     }
