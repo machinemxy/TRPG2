@@ -22,7 +22,7 @@ extension Bundle {
             return nil
         }
         
-        print("decoded \(fileName)")
+        print("loaded \(fileName)")
         return loaded
     }
 }

@@ -9,7 +9,12 @@
         "choiceType":"person",
         "name":"Minister1",
         "destination":{"subSceneName":"minister1"}
-      }
+      },
+	  {
+		"choiceType":"action",
+		"name":"Suicide",
+		"destination":{"sceneName":"gameOver","subSceneName":"gameOver"}
+	  }
     ]
   },
   "minister1":

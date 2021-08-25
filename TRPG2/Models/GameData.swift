@@ -9,10 +9,13 @@ import Foundation
 
 
 class GameData: ObservableObject, Codable {
+	// MARK: properties
     @Published var sceneType = SceneType.normal
     @Published var sceneName = "outOfPalace"
-    @Published var subSceneName = "outOfPalace"
+	@Published var subSceneName = "outOfPalace"
     @Published var variables = Array.init(repeating: 0, count: 100)
+	private var _loadedSceneName: String?
+	private var _loadedNormalScene: Dictionary<String, NormalScene>?
     
     // MARK: codable
     enum Ck: CodingKey {
@@ -38,4 +41,16 @@ class GameData: ObservableObject, Codable {
         subSceneName = try container.decode(String.self, forKey: .subSceneName)
         variables = try container.decode([Int].self, forKey: .variables)
     }
+	
+	// MARK: calculated properties
+	var normalScenes: Dictionary<String, NormalScene> {
+		if sceneName == _loadedSceneName {
+			return _loadedNormalScene ?? Dictionary()
+		} else {
+			let fileName = sceneName + "_normal"
+			_loadedSceneName = sceneName
+			_loadedNormalScene = Bundle.main.load(from: fileName)
+			return _loadedNormalScene ?? Dictionary()
+		}
+	}
 }
