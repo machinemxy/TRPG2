@@ -27,9 +27,12 @@ struct NormalView: View {
             VStack {
                 ScrollView(.vertical, showsIndicators: true, content: {
 					VStack(alignment: .leading, spacing: 8, content: {
-						Text(scene.detail)
-							.font(.footnote)
-							.padding(.horizontal)
+                        HStack {
+                            Text(scene.detail)
+                                .font(.footnote)
+                                .padding(.horizontal)
+                            Spacer()
+                        }
 						
 						ForEach(visibleChoices) { choice in
 							ChoiceView(choice: choice)

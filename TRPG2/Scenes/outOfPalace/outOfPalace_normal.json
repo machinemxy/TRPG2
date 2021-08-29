@@ -10,22 +10,58 @@
         "name":"Minister1",
         "destination":{"subSceneName":"minister1"}
       },
+      {
+        "choiceType":"person",
+        "name":"Minister2",
+        "destination":{"subSceneName":"minister2"}
+      },
+      {
+        "choiceType":"object",
+        "name":"Execution stand",
+        "destination":{"subSceneName":"executionStand"}
+      },
 	  {
 		"choiceType":"action",
-		"name":"Suicide",
-		"destination":{"sceneName":"gameOver","subSceneName":"gameOver"}
+		"name":"Enter the palace",
+		"destination":{"sceneName":"palace","subSceneName":"palace"}
 	  }
     ]
   },
   "minister1":
   {
     "name":"Minister1:",
-    "detail":"\"Since Dong Zhuo seized the power, he killed several people opposed him.\"",
+    "detail":"\"Since Dong Zhuo seized the power, he already killed several people who opposed to him.\"",
     "choices":
     [
       {
         "choiceType":"action",
-        "name":"End Conversation",
+        "name":"End conversation",
+        "destination":{"subSceneName":"outOfPalace"}
+      }
+    ]
+  },
+  "minister2":
+  {
+    "name":"Minister2:",
+    "detail":"\"I have a bad feeling that Dong Zhuo will announce something terrible.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"End conversation",
+        "destination":{"subSceneName":"outOfPalace"}
+      }
+    ]
+  },
+  "executionStand":
+  {
+    "name":"Execution stand",
+    "detail":"Dong Zhuo use it to kill people who opposed to him.",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Leave",
         "destination":{"subSceneName":"outOfPalace"}
       }
     ]

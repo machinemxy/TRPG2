@@ -31,9 +31,7 @@ struct RollAbilitiesView: View {
                 }
                 Button("Confirm") {
                     _ = FileManager.default.save(pc, to: .pc)
-                    withAnimation {
-                        isNewGame = false
-                    }
+                    isNewGame = false
                 }
             }
             .navigationTitle("Abilities Roll")

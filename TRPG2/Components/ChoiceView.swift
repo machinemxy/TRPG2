@@ -26,16 +26,14 @@ struct ChoiceView: View {
         HStack {
             Button(action: {
                 let destination = choice.destination
-                withAnimation {
-                    if let subSceneName = destination.subSceneName {
-                        gameData.subSceneName = subSceneName
-                    }
-                    if let sceneName = destination.sceneName {
-                        gameData.sceneName = sceneName
-                    }
-                    if let sceneType = destination.sceneType {
-                        gameData.sceneType = sceneType
-                    }
+                if let subSceneName = destination.subSceneName {
+                    gameData.subSceneName = subSceneName
+                }
+                if let sceneName = destination.sceneName {
+                    gameData.sceneName = sceneName
+                }
+                if let sceneType = destination.sceneType {
+                    gameData.sceneType = sceneType
                 }
             }, label: {
                 Image(systemName: imageName)
