@@ -1,0 +1,121 @@
+{
+  "palace":
+  {
+	"name":"Palace",
+	"detail":"Place to hold morning daily meeting. The atmosphere is solumn.",
+	"choices":
+	[
+	  {
+		"choiceType":"person",
+		"name":"Emperor Liu Bian",
+		"destination":{"subSceneName":"liuBian"}
+	  },
+	  {
+		"choiceType":"person",
+		"name":"Ministers",
+		"destination":{"subSceneName":"ministers"}
+	  },
+	  {
+		"choiceType":"person",
+		"name":"Dong Zhuo",
+		"destination":{"subSceneName":"dongZhuo"}
+	  }
+	]
+  },
+  "liuBian":
+  {
+	"name":"Emperor Liu Bian",
+	"detail":"The pitful Emperor is just sitting there with pale face, like a puppet.",
+	"choices":
+	[
+	  {
+		"choiceType":"action",
+		"name":"Look away",
+		"destination":{"subSceneName":"palace"}
+	  }
+	]
+  },
+  "ministers":
+  {
+	"name":"Ministers",
+	"detail":"Ministers bowed their bodies, waiting for Dong Zhuo's words.",
+	"choices":
+	[
+	  {
+		"choiceType":"action",
+		"name":"Look away",
+		"destination":{"subSceneName":"palace"}
+	  }
+	]
+  },
+  "dongZhuo":
+  {
+	"name":"Dong Zhuo:",
+	"detail":"\"Everyone heads up. Today our Emperor has something to announce. Your Majesty, please.\"",
+	"choices":
+	[
+	  {
+		"choiceType":"action",
+		"name":"Continue",
+		"destination":{"subSceneName":"dongZhuo2"}
+	  }
+	]
+  },
+  "dongZhuo2":
+  {
+	"name":"Emperor Liu Bian:",
+	"detail":"\"I am sick. I feel I can no longer be a king and deal with government affairs. I announce to pass my position to my little brother, Liu Xie. But he is still too young. Before he becomes mature, I'll let Dong Zhuo deal with all government affairs.\"",
+	"choices":
+	[
+	  {
+		"choiceType":"action",
+		"name":"Continue",
+		"destination":{"subSceneName":"dongZhuo3"}
+	  }
+	]
+  },
+  "dongZhuo3":
+  {
+	"name":"Brave Minister:",
+	"detail":"\"Object! Your Majesty, this mustn't be your real will. It is Dong Zhuo, who forced you saying that, is it?\"",
+	"choices":
+	[
+	  {
+		"choiceType":"action",
+		"name":"Continue",
+		"destination":{"subSceneName":"dongZhuo4"}
+	  }
+	]
+  },
+  "dongZhuo4":
+  {
+	"name":"Emperor Liu Bian:",
+	"detail":"\"......\"",
+	"choices":
+	[
+	  {
+		"choiceType":"action",
+		"name":"Continue",
+		"destination":{"subSceneName":"dongZhuo5"}
+	  }
+	]
+  },
+  "dongZhuo5":
+  {
+	"name":"Dong Zhuo:",
+	"detail":"\"Rude dog! You dare to suspect our Emperor? Guards! Pull him out and kill him!\"",
+	"choices":
+	[
+	  {
+		"choiceType":"action",
+		"name":"Persuade Dong Zhuo",
+		"destination":{"subSceneName":"dongZhuo6"}
+	  },
+	  {
+		"choiceType":"action",
+		"name":"Keep silent",
+		"destination":{"subSceneName":"dongZhuo7"}
+	  }
+	]
+  }
+}
