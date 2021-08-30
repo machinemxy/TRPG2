@@ -19,7 +19,6 @@ You are not only a brave warrior, great leader in the battle field, but also not
 Now Dynasty Han is facing another crisis. General Dong Zhuo seized control of the dynasty by holding yong empiror Liu Bian as hostage. What will you react in this situation?
 """
             )
-            .font(.footnote)
             .padding()
         })
         .navigationTitle("Cao Cao")

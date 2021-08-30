@@ -29,7 +29,6 @@ struct NormalView: View {
 					VStack(alignment: .leading, spacing: 8, content: {
                         HStack {
                             Text(scene.detail)
-                                .font(.footnote)
                                 .padding(.horizontal)
                             Spacer()
                         }

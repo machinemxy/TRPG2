@@ -43,7 +43,7 @@
   "minister2":
   {
     "name":"Minister2:",
-    "detail":"\"I have a bad feeling that Dong Zhuo will announce something terrible.\"",
+    "detail":"\"I have a bad feeling that Dong Zhuo will announce something terrible today.\"",
     "choices":
     [
       {
@@ -61,7 +61,7 @@
     [
       {
         "choiceType":"action",
-        "name":"Leave",
+        "name":"Look away",
         "destination":{"subSceneName":"outOfPalace"}
       }
     ]
