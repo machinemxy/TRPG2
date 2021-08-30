@@ -17,8 +17,8 @@
       },
       {
         "choiceType":"object",
-        "name":"Execution stand",
-        "destination":{"subSceneName":"executionStand"}
+        "name":"Guillotine",
+        "destination":{"subSceneName":"guillotine"}
       },
 	  {
 		"choiceType":"action",
@@ -53,9 +53,9 @@
       }
     ]
   },
-  "executionStand":
+  "guillotine":
   {
-    "name":"Execution stand",
+    "name":"Guillotine",
     "detail":"Dong Zhuo use it to kill people who opposed to him.",
     "choices":
     [
