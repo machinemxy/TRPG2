@@ -14,8 +14,8 @@ class GameData: ObservableObject, Codable {
     @Published var sceneName = "outOfPalace"
 	@Published var subSceneName = "outOfPalace"
     @Published var variables = Array.init(repeating: 0, count: 100)
-	private var _cachedNormalSceneName: String?
-	private var _cachedNormalScene: Dictionary<String, NormalScene>?
+	private var cachedNormalSceneName: String?
+	private var cachedNormalScene: Dictionary<String, NormalScene>?
     
     // MARK: codable
     enum Ck: CodingKey {
@@ -44,13 +44,13 @@ class GameData: ObservableObject, Codable {
 	
 	// MARK: calculated properties
 	var normalScenes: Dictionary<String, NormalScene> {
-		if sceneName == _cachedNormalSceneName {
-			return _cachedNormalScene ?? Dictionary()
+		if sceneName == cachedNormalSceneName {
+			return cachedNormalScene ?? Dictionary()
 		} else {
 			let fileName = sceneName + "_normal"
-			_cachedNormalSceneName = sceneName
-			_cachedNormalScene = Bundle.main.load(from: fileName)
-			return _cachedNormalScene ?? Dictionary()
+			cachedNormalSceneName = sceneName
+			cachedNormalScene = Bundle.main.load(from: fileName)
+			return cachedNormalScene ?? Dictionary()
 		}
 	}
 }
