@@ -29,19 +29,7 @@ struct MenuBarView: View {
             })
             
             Button(action: {
-                let error = FileManager.default.save(pc, to: .pc)
-                if let error = error {
-                    print(error.localizedDescription)
-                    return
-                }
-                
-                let error2 = FileManager.default.save(gameData, to: .gameData)
-                if let error2 = error2 {
-                    print(error2.localizedDescription)
-                    return
-                }
-                
-                isSaveCompleted = true
+                save()
             }, label: {
                 Image(systemName: "square.and.arrow.down")
                     .font(.largeTitle)
@@ -64,6 +52,22 @@ struct MenuBarView: View {
                     .font(.largeTitle)
             })
         }
+    }
+    
+    private func save() {
+        let error = FileManager.default.save(pc, to: .pc)
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        
+        let error2 = FileManager.default.save(gameData, to: .gameData)
+        if let error2 = error2 {
+            print(error2.localizedDescription)
+            return
+        }
+        
+        isSaveCompleted = true
     }
 }
 
