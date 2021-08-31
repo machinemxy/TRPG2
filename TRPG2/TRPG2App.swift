@@ -20,6 +20,7 @@ struct TRPG2App: App {
                     .environmentObject(pc)
             } else if gameData.sceneType == .normal {
                 NormalView()
+                    .environmentObject(pc)
                     .environmentObject(gameData)
             }
         }

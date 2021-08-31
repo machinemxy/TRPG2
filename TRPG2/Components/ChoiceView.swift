@@ -25,6 +25,10 @@ struct ChoiceView: View {
     var body: some View {
         HStack {
             Button(action: {
+                if let changeConditon = choice.changeCondition {
+                    gameData.variables[changeConditon.id] = changeConditon.value
+                }
+                
                 let destination = choice.destination
                 if let subSceneName = destination.subSceneName {
                     gameData.subSceneName = subSceneName

@@ -109,13 +109,40 @@
 	  {
 		"choiceType":"action",
 		"name":"Persuade Dong Zhuo",
-		"destination":{"subSceneName":"dongZhuo6"}
+		"destination":{"subSceneName":"TODO"}
 	  },
 	  {
 		"choiceType":"action",
 		"name":"Keep silent",
-		"destination":{"subSceneName":"dongZhuo7"}
+		"destination":{"subSceneName":"dongZhuo6"}
 	  }
 	]
-  }
+  },
+  "dongZhuo6":
+  {
+    "name":"Voice-over",
+    "detail":"The brave minister was pull out by the guards, followed by a shriek, the palace return to silent.",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Continue",
+        "destination":{"subSceneName":"dongZhuo7"},
+        "changeCondition":{"id":0,"value":1}
+      }
+    ]
+  },
+  "dongZhuo7":
+  {
+    "name":"Dong Zhuo:",
+    "detail":"\"That's all for today's meeting. Dismiss!\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Leave",
+        "destination":{"sceneName":"outOfPalace2","subSceneName":"outOfPalace"},
+      }
+    ]
+  },
 }

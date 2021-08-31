@@ -18,7 +18,7 @@ struct NormalView: View {
     var visibleChoices: [Choice] {
         scene.choices.filter { choice in
             guard let appearCondition = choice.appearCondition else { return true }
-            return gameData.variables[appearCondition.variable] == appearCondition.value
+            return gameData.variables[appearCondition.id] == appearCondition.value
         }
     }
     
@@ -41,6 +41,9 @@ struct NormalView: View {
                 })
                 
                 Spacer()
+                
+                MenuBarView()
+                    .padding()
             }
             .navigationTitle(scene.name)
         }

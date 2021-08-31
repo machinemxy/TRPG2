@@ -1,0 +1,28 @@
+{
+  "outOfPalace":
+  {
+    "name":"Out of Palace",
+    "detail":"The road to the Palace. Some ministers gather here to exchange their ideas",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Enter the palace",
+        "destination":{"subSceneName":"palace"}
+  	  }
+    ]
+  },
+  "palace":
+  {
+    "name":"Guard:",
+    "detail":"\"The morning meeting is end. You shall not enter the palace again.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Leave",
+        "destination":{"subSceneName":"outOfPalace"}
+  	  }
+    ]
+  }
+}

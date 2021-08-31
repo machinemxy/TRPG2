@@ -11,11 +11,12 @@ struct Choice: Codable, Identifiable {
     let choiceType: ChoiceType
     let name: String
     let destination: Destination
-    let appearCondition: AppearCondition?
+    let appearCondition: Condition?
+    let changeCondition: Condition?
     
     var id: String { name }
     
-    static let example = Choice(choiceType: .action, name: "Back", destination: Destination(sceneType: nil, sceneName: nil, subSceneName: "outOfPalace"), appearCondition: nil)
+    static let example = Choice(choiceType: .action, name: "Back", destination: Destination(sceneType: nil, sceneName: nil, subSceneName: "outOfPalace"), appearCondition: nil, changeCondition: nil)
 }
 
 enum ChoiceType: String, Codable {
