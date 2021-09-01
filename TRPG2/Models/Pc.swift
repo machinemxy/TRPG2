@@ -94,4 +94,24 @@ class Pc: ObservableObject, Creature, Codable {
         // armor class = 10 + dexMod + shieldAc + armorAc
         return 10 + dex.modifier + (shield?.ac ?? 0) + (armor?.ac ?? 0)
     }
+    
+    // MARK: function
+    func copy(from pc: Pc) {
+        name = pc.name
+        str = pc.str
+        dex = pc.dex
+        con = pc.con
+        int = pc.int
+        wis = pc.wis
+        cha = pc.cha
+        lv = pc.lv
+        exp = pc.exp
+        hp = pc.hp
+        mhp = pc.mhp
+        weapon = pc.weapon
+        shield = pc.shield
+        armor = pc.armor
+        ps = pc.ps
+        money = pc.money
+    }
 }

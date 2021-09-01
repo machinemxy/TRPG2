@@ -53,4 +53,12 @@ class GameData: ObservableObject, Codable {
 			return cachedNormalScene ?? Dictionary()
 		}
 	}
+    
+    // MARK: function
+    func copy(from gd: GameData) {
+        sceneType = gd.sceneType
+        sceneName = gd.sceneName
+        subSceneName = gd.subSceneName
+        variables = gd.variables
+    }
 }

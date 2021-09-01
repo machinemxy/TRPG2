@@ -10,7 +10,9 @@ import SwiftUI
 struct MenuBarView: View {
     @EnvironmentObject var pc: Pc
     @EnvironmentObject var gameData: GameData
+    @State private var saveText = ""
     @State private var isSaveCompleted = false
+    @State private var isLoadCompleted = false
     
     var body: some View {
         HStack {
@@ -39,10 +41,13 @@ struct MenuBarView: View {
             })
             
             Button(action: {
-                
+                load()
             }, label: {
                 Image(systemName: "square.and.arrow.up")
                     .font(.largeTitle)
+            })
+            .alert(isPresented: $isLoadCompleted, content: {
+                Alert(title: Text("Load Completed!"))
             })
             
             Button(action: {
@@ -58,16 +63,29 @@ struct MenuBarView: View {
         let error = FileManager.default.save(pc, to: .pc)
         if let error = error {
             print(error.localizedDescription)
+            saveText = "Save Failed!"
+            isSaveCompleted = true
             return
         }
         
         let error2 = FileManager.default.save(gameData, to: .gameData)
         if let error2 = error2 {
             print(error2.localizedDescription)
+            saveText = "Save Failed!"
+            isSaveCompleted = true
             return
         }
         
+        saveText = "Save Completed!"
         isSaveCompleted = true
+    }
+    
+    private func load() {
+        let loadedPc = FileManager.default.load(from: .pc) ?? Pc()
+        let loadedGameData = FileManager.default.load(from: .gameData) ?? GameData()
+        pc.copy(from: loadedPc)
+        gameData.copy(from: loadedGameData)
+        isLoadCompleted = true
     }
 }
 
