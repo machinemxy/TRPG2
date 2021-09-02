@@ -50,12 +50,13 @@ struct MenuBarView: View {
                 Alert(title: Text("Load Completed!"))
             })
             
-            Button(action: {
-                
-            }, label: {
-                Image(systemName: "ellipsis.circle")
-                    .font(.largeTitle)
-            })
+            
+            NavigationLink(
+                destination: ExtraOptionsView(),
+                label: {
+                    Image(systemName: "ellipsis.circle")
+                        .font(.largeTitle)
+                })
         }
     }
     
