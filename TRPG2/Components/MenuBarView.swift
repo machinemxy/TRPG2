@@ -16,12 +16,12 @@ struct MenuBarView: View {
     
     var body: some View {
         HStack {
-            Button(action: {
-                
-            }, label: {
-                Image(systemName: "person.circle")
-                    .font(.largeTitle)
-            })
+            NavigationLink(
+                destination: PcView(),
+                label: {
+                    Image(systemName: "person.circle")
+                        .font(.largeTitle)
+                })
             
             Button(action: {
                 

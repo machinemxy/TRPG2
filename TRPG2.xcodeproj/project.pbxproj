@@ -39,6 +39,8 @@
 		22AF6A4525AB3F060035CC95 /* TRPG2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF6A4425AB3F060035CC95 /* TRPG2UITests.swift */; };
 		22BB49AE26E10C48005EDD44 /* ExtraOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49AD26E10C48005EDD44 /* ExtraOptionsView.swift */; };
 		22BB49B026E1181C005EDD44 /* LongText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49AF26E1181C005EDD44 /* LongText.swift */; };
+		22BB49B226E2677E005EDD44 /* PcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B126E2677E005EDD44 /* PcView.swift */; };
+		22BB49B426E269B1005EDD44 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B326E269B1005EDD44 /* StringExt.swift */; };
 		92158BDD26DD277F00C1C91F /* palace_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 92158BDC26DD277F00C1C91F /* palace_normal.json */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		22AF6A4625AB3F060035CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22BB49AD26E10C48005EDD44 /* ExtraOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraOptionsView.swift; sourceTree = "<group>"; };
 		22BB49AF26E1181C005EDD44 /* LongText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongText.swift; sourceTree = "<group>"; };
+		22BB49B126E2677E005EDD44 /* PcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PcView.swift; sourceTree = "<group>"; };
+		22BB49B326E269B1005EDD44 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		92158BDC26DD277F00C1C91F /* palace_normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palace_normal.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +171,7 @@
 				228297D426CD53B700C1D2C3 /* IntExt.swift */,
 				229F93BF26D11C8D00EA90BE /* FileManagerExt.swift */,
 				222039C926D52CCE00940EB8 /* BundleExt.swift */,
+				22BB49B326E269B1005EDD44 /* StringExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				226EFB9026CBBE3F002FFBC5 /* CaoCaoIntroView.swift */,
 				222039CB26D52FE500940EB8 /* NormalView.swift */,
 				22BB49AD26E10C48005EDD44 /* ExtraOptionsView.swift */,
+				22BB49B126E2677E005EDD44 /* PcView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,8 +449,10 @@
 				22637DE226DE72A100723DED /* MenuBarView.swift in Sources */,
 				228297D926CD593800C1D2C3 /* PassiveSkill.swift in Sources */,
 				221F785D26D3B8C800042ACF /* Choice.swift in Sources */,
+				22BB49B226E2677E005EDD44 /* PcView.swift in Sources */,
 				221F786126D3DA1600042ACF /* UserDefaultsKey.swift in Sources */,
 				226EFB9126CBBE3F002FFBC5 /* CaoCaoIntroView.swift in Sources */,
+				22BB49B426E269B1005EDD44 /* StringExt.swift in Sources */,
 				22BB49B026E1181C005EDD44 /* LongText.swift in Sources */,
 				229F93C226D1436200EA90BE /* GameData.swift in Sources */,
 				2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */,

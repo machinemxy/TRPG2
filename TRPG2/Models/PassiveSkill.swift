@@ -9,4 +9,11 @@ import Foundation
 
 enum PassiveSkill: String, Codable {
     case persuation = "Persuation"
+    
+    var description: String {
+        switch self {
+        case .persuation:
+            return "When you perform persuation, you'll get proficiency bonus."
+        }
+    }
 }

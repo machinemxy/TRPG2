@@ -23,12 +23,15 @@ class Pc: ObservableObject, Creature, Codable {
     @Published var weapon: Weapon?
     @Published var shield: Shield?
     @Published var armor: Armor?
+    @Published var uneWeapons = [Weapon]()
+    @Published var uneShields = [Shield]()
+    @Published var uneArmors = [Armor]()
     @Published var ps: [PassiveSkill] = [.persuation]
     @Published var money = 0
     
     // MARK: codable
     enum Ck: CodingKey {
-        case name, str, dex, con, int, wis, cha, lv, exp, hp, mhp, weapon, shield, armor, ps, money
+        case name, str, dex, con, int, wis, cha, lv, exp, hp, mhp, weapon, shield, armor, uneWeapons, uneShields, uneArmors, ps, money
     }
     
     func encode(to encoder: Encoder) throws {
@@ -48,6 +51,9 @@ class Pc: ObservableObject, Creature, Codable {
         try container.encode(weapon, forKey: .weapon)
         try container.encode(shield, forKey: .shield)
         try container.encode(armor, forKey: .armor)
+        try container.encode(uneWeapons, forKey: .uneWeapons)
+        try container.encode(uneShields, forKey: .uneShields)
+        try container.encode(uneArmors, forKey: .uneArmors)
         try container.encode(ps, forKey: .ps)
         try container.encode(money, forKey: .money)
     }
@@ -71,6 +77,9 @@ class Pc: ObservableObject, Creature, Codable {
         weapon = try container.decodeIfPresent(Weapon.self, forKey: .weapon)
         shield = try container.decodeIfPresent(Shield.self, forKey: .shield)
         armor = try container.decodeIfPresent(Armor.self, forKey: .armor)
+        uneWeapons = try container.decode([Weapon].self, forKey: .uneWeapons)
+        uneShields = try container.decode([Shield].self, forKey: .uneShields)
+        uneArmors = try container.decode([Armor].self, forKey: .uneArmors)
         ps = try container.decode([PassiveSkill].self, forKey: .ps)
         money = try container.decode(Int.self, forKey: .money)
     }
@@ -95,6 +104,21 @@ class Pc: ObservableObject, Creature, Codable {
         return 10 + dex.modifier + (shield?.ac ?? 0) + (armor?.ac ?? 0)
     }
     
+    var requiredExp: Int {
+        switch lv {
+        case 1:
+            return 300
+        case 2:
+            return 900
+        case 3:
+            return 2_700
+        case 4:
+            return 6_500
+        default:
+            return Int.max
+        }
+    }
+    
     // MARK: function
     func copy(from pc: Pc) {
         name = pc.name
@@ -111,6 +135,9 @@ class Pc: ObservableObject, Creature, Codable {
         weapon = pc.weapon
         shield = pc.shield
         armor = pc.armor
+        uneWeapons = pc.uneWeapons
+        uneShields = pc.uneShields
+        uneArmors = pc.uneArmors
         ps = pc.ps
         money = pc.money
     }

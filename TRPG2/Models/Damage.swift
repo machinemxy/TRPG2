@@ -12,4 +12,6 @@ struct Damage: Codable {
     let a: Int
     let b: Int
     let c: Int
+    
+    var description: String {"\(a)d\(b) + \(c)"}
 }
