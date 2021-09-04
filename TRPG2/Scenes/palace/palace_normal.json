@@ -51,7 +51,7 @@
   "dongZhuo":
   {
 	"name":"Dong Zhuo:",
-	"detail":"\"Everyone heads up. Today our Emperor has something to announce. Your Majesty, please.\"",
+	"detail":"\"Everyone heads up. Today our emperor has something to announce. Your Majesty, please.\"",
 	"choices":
 	[
 	  {
@@ -103,7 +103,7 @@
   "dongZhuo5":
   {
 	"name":"Dong Zhuo:",
-	"detail":"\"Rude dog! You dare to suspect our Emperor? Guards! Pull him out and kill him!\"",
+	"detail":"\"Rude dog! You dare to suspect our emperor? Guards! Pull him out and kill him!\"",
 	"choices":
 	[
 	  {
