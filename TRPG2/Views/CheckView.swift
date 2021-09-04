@@ -42,21 +42,29 @@ struct CheckView: View {
     var body: some View {
         NavigationView {
             Form {
-                KeyValueView(key: "Target", value: "\(scene.targetValue)")
+                if scene.isSecret {
+                    KeyValueView(key: "Target", value: "?")
+                } else {
+                    KeyValueView(key: "Target", value: "\(scene.targetValue)")
+                }
                 KeyValueView(key: scene.checkType.abilityBonusText, value: "\(abilityBonus)")
                 KeyValueView(key: "Proficiency bonus", value: "\(proficiencyBonus)")
                 RollValueView(rollValue: $rollValue)
                 FinalValueView(finalValue: finalValue)
                 if let finalValue = finalValue {
-                    if finalValue > scene.targetValue {
-                        Text("Check succeeded!")
-                            .foregroundColor(.green)
+                    if finalValue >= scene.targetValue {
+                        if !scene.isSecret {
+                            Text("Check succeeded!")
+                                .foregroundColor(.green)
+                        }
                         Button("Continue") {
                             goto(destination: scene.whenSucceed)
                         }
                     } else {
-                        Text("Check failed!")
-                            .foregroundColor(.red)
+                        if !scene.isSecret {
+                            Text("Check failed!")
+                                .foregroundColor(.red)
+                        }
                         Button("Continue") {
                             goto(destination: scene.whenFail)
                         }

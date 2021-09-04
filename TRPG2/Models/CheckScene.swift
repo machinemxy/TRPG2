@@ -12,8 +12,9 @@ struct CheckScene: Codable {
     let targetValue: Int
     let whenSucceed: Destination
     let whenFail: Destination
+    let isSecret: Bool
     
-    static let fallBack = CheckScene(checkType: .persuation, targetValue: 10, whenSucceed: Destination.gameOver, whenFail: Destination.gameOver)
+    static let fallBack = CheckScene(checkType: .persuation, targetValue: 15, whenSucceed: Destination.gameOver, whenFail: Destination.gameOver, isSecret: true)
 }
 
 enum CheckType: String, Codable {
