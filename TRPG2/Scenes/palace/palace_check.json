@@ -1,0 +1,9 @@
+{
+  "persuadeDongZhuo":
+  {
+    "checkType":"persuation",
+    "targetValue":10,
+    "whenSucceed":{"sceneType":"normal","subSceneName":"persuationSucceed"},
+    "whenFail":{"sceneType":"normal","subSceneName":"persuationFail"},
+  }
+}

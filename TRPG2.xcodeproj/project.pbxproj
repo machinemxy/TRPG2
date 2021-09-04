@@ -22,7 +22,6 @@
 		226EFB9126CBBE3F002FFBC5 /* CaoCaoIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EFB9026CBBE3F002FFBC5 /* CaoCaoIntroView.swift */; };
 		228297CC26CD220800C1D2C3 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297CB26CD220800C1D2C3 /* Creature.swift */; };
 		228297CE26CD265800C1D2C3 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297CD26CD265800C1D2C3 /* Weapon.swift */; };
-		228297D026CD4A5200C1D2C3 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297CF26CD4A5200C1D2C3 /* Shield.swift */; };
 		228297D226CD4A7800C1D2C3 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297D126CD4A7800C1D2C3 /* Armor.swift */; };
 		228297D526CD53B700C1D2C3 /* IntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297D426CD53B700C1D2C3 /* IntExt.swift */; };
 		228297D726CD557B00C1D2C3 /* Damage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228297D626CD557B00C1D2C3 /* Damage.swift */; };
@@ -41,6 +40,11 @@
 		22BB49B026E1181C005EDD44 /* LongText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49AF26E1181C005EDD44 /* LongText.swift */; };
 		22BB49B226E2677E005EDD44 /* PcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B126E2677E005EDD44 /* PcView.swift */; };
 		22BB49B426E269B1005EDD44 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B326E269B1005EDD44 /* StringExt.swift */; };
+		22BB49B626E35011005EDD44 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B526E35011005EDD44 /* CheckView.swift */; };
+		22BB49B826E35544005EDD44 /* CheckScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B726E35544005EDD44 /* CheckScene.swift */; };
+		22D0BF5F26E3BF5000D2965D /* RollValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0BF5E26E3BF5000D2965D /* RollValueView.swift */; };
+		22D0BF6326E3C18E00D2965D /* FinalValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0BF6226E3C18E00D2965D /* FinalValueView.swift */; };
+		22D0BF6526E3C3F400D2965D /* palace_check.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D0BF6426E3C3F400D2965D /* palace_check.json */; };
 		92158BDD26DD277F00C1C91F /* palace_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 92158BDC26DD277F00C1C91F /* palace_normal.json */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +81,6 @@
 		226EFB9026CBBE3F002FFBC5 /* CaoCaoIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoCaoIntroView.swift; sourceTree = "<group>"; };
 		228297CB26CD220800C1D2C3 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		228297CD26CD265800C1D2C3 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		228297CF26CD4A5200C1D2C3 /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
 		228297D126CD4A7800C1D2C3 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		228297D426CD53B700C1D2C3 /* IntExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExt.swift; sourceTree = "<group>"; };
 		228297D626CD557B00C1D2C3 /* Damage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Damage.swift; sourceTree = "<group>"; };
@@ -102,6 +105,11 @@
 		22BB49AF26E1181C005EDD44 /* LongText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongText.swift; sourceTree = "<group>"; };
 		22BB49B126E2677E005EDD44 /* PcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PcView.swift; sourceTree = "<group>"; };
 		22BB49B326E269B1005EDD44 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		22BB49B526E35011005EDD44 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		22BB49B726E35544005EDD44 /* CheckScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckScene.swift; sourceTree = "<group>"; };
+		22D0BF5E26E3BF5000D2965D /* RollValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollValueView.swift; sourceTree = "<group>"; };
+		22D0BF6226E3C18E00D2965D /* FinalValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueView.swift; sourceTree = "<group>"; };
+		22D0BF6426E3C3F400D2965D /* palace_check.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palace_check.json; sourceTree = "<group>"; };
 		92158BDC26DD277F00C1C91F /* palace_normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palace_normal.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +199,7 @@
 				2293387326CA564F00FC6596 /* RollAbilitiesView.swift */,
 				226EFB9026CBBE3F002FFBC5 /* CaoCaoIntroView.swift */,
 				222039CB26D52FE500940EB8 /* NormalView.swift */,
+				22BB49B526E35011005EDD44 /* CheckView.swift */,
 				22BB49AD26E10C48005EDD44 /* ExtraOptionsView.swift */,
 				22BB49B126E2677E005EDD44 /* PcView.swift */,
 			);
@@ -203,6 +212,8 @@
 				2298D8F926CAB078000A22F5 /* KeyValueView.swift */,
 				222039CD26D53DFC00940EB8 /* ChoiceView.swift */,
 				22637DE126DE72A100723DED /* MenuBarView.swift */,
+				22D0BF5E26E3BF5000D2965D /* RollValueView.swift */,
+				22D0BF6226E3C18E00D2965D /* FinalValueView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -214,7 +225,6 @@
 				228297D626CD557B00C1D2C3 /* Damage.swift */,
 				228297CB26CD220800C1D2C3 /* Creature.swift */,
 				228297CD26CD265800C1D2C3 /* Weapon.swift */,
-				228297CF26CD4A5200C1D2C3 /* Shield.swift */,
 				228297D126CD4A7800C1D2C3 /* Armor.swift */,
 				228297D826CD593800C1D2C3 /* PassiveSkill.swift */,
 				229F93C126D1436200EA90BE /* GameData.swift */,
@@ -222,6 +232,7 @@
 				221F785A26D3B5CD00042ACF /* Destination.swift */,
 				221F785C26D3B8C800042ACF /* Choice.swift */,
 				221F785E26D3BAD800042ACF /* NormalScene.swift */,
+				22BB49B726E35544005EDD44 /* CheckScene.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				92158BDC26DD277F00C1C91F /* palace_normal.json */,
+				22D0BF6426E3C3F400D2965D /* palace_check.json */,
 			);
 			path = palace;
 			sourceTree = "<group>";
@@ -405,6 +417,7 @@
 				92158BDD26DD277F00C1C91F /* palace_normal.json in Resources */,
 				222039C326D518CA00940EB8 /* gameOver_normal.json in Resources */,
 				222039C626D51B1E00940EB8 /* outOfPalace_normal.json in Resources */,
+				22D0BF6526E3C3F400D2965D /* palace_check.json in Resources */,
 				22AF6A2C25AB3F060035CC95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,13 +450,14 @@
 				221F785B26D3B5CD00042ACF /* Destination.swift in Sources */,
 				2293387426CA564F00FC6596 /* RollAbilitiesView.swift in Sources */,
 				2298D8FD26CAB1C0000A22F5 /* Pc.swift in Sources */,
-				228297D026CD4A5200C1D2C3 /* Shield.swift in Sources */,
 				228297CC26CD220800C1D2C3 /* Creature.swift in Sources */,
 				222039CC26D52FE500940EB8 /* NormalView.swift in Sources */,
+				22D0BF6326E3C18E00D2965D /* FinalValueView.swift in Sources */,
 				222039CA26D52CCE00940EB8 /* BundleExt.swift in Sources */,
 				221F785F26D3BAD800042ACF /* NormalScene.swift in Sources */,
 				22BB49AE26E10C48005EDD44 /* ExtraOptionsView.swift in Sources */,
 				221F785926D3B21200042ACF /* Condition.swift in Sources */,
+				22D0BF5F26E3BF5000D2965D /* RollValueView.swift in Sources */,
 				222039CE26D53DFC00940EB8 /* ChoiceView.swift in Sources */,
 				229F93C026D11C8D00EA90BE /* FileManagerExt.swift in Sources */,
 				22637DE226DE72A100723DED /* MenuBarView.swift in Sources */,
@@ -454,9 +468,11 @@
 				226EFB9126CBBE3F002FFBC5 /* CaoCaoIntroView.swift in Sources */,
 				22BB49B426E269B1005EDD44 /* StringExt.swift in Sources */,
 				22BB49B026E1181C005EDD44 /* LongText.swift in Sources */,
+				22BB49B826E35544005EDD44 /* CheckScene.swift in Sources */,
 				229F93C226D1436200EA90BE /* GameData.swift in Sources */,
 				2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */,
 				22AF6A2825AB3F050035CC95 /* TRPG2App.swift in Sources */,
+				22BB49B626E35011005EDD44 /* CheckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

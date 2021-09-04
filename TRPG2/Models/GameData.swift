@@ -16,6 +16,8 @@ class GameData: ObservableObject, Codable {
     @Published var variables = Array.init(repeating: 0, count: 100)
 	private var cachedNormalSceneName: String?
 	private var cachedNormalScene: Dictionary<String, NormalScene>?
+    private var cachedCheckSceneName: String?
+    private var cachedCheckScene: Dictionary<String, CheckScene>?
     
     // MARK: codable
     enum Ck: CodingKey {
@@ -53,6 +55,17 @@ class GameData: ObservableObject, Codable {
 			return cachedNormalScene ?? Dictionary()
 		}
 	}
+    
+    var checkScenes: Dictionary<String, CheckScene> {
+        if sceneName == cachedCheckSceneName {
+            return cachedCheckScene ?? Dictionary()
+        } else {
+            let fileName = sceneName + "_check"
+            cachedCheckSceneName = sceneName
+            cachedCheckScene = Bundle.main.load(from: fileName)
+            return cachedCheckScene ?? Dictionary()
+        }
+    }
     
     // MARK: function
     func copy(from gd: GameData) {

@@ -11,6 +11,8 @@ struct Destination: Codable {
     let sceneType: SceneType?
     let sceneName: String?
     let subSceneName: String?
+    
+    static let gameOver = Destination(sceneType: .normal, sceneName: "gameOver", subSceneName: "gameOver")
 }
 
 enum SceneType: String, Codable {

@@ -109,7 +109,7 @@
 	  {
 		"choiceType":"action",
 		"name":"Persuade Dong Zhuo",
-		"destination":{"subSceneName":"TODO"}
+		"destination":{"sceneType":"check","subSceneName":"persuadeDongZhuo"}
 	  },
 	  {
 		"choiceType":"action",
@@ -145,4 +145,30 @@
       }
     ]
   },
+  "persuationFail":
+  {
+    "name":"Dong Zhuo:",
+    "detail":"\"Enough! My mind won't change!\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Continue",
+        "destination":{"subSceneName":"dongZhuo6"}
+      }
+    ]
+  },
+  "persuationSucceed":
+  {
+    "name":"Dong Zhuo:",
+    "detail":"\"OK, I'll spare his dog-like life. But he is fired. I don't want to see him again.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Continue",
+        "destination":{"subSceneName":"dongZhuo7"}
+      }
+    ]
+  }
 }

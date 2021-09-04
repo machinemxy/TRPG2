@@ -21,10 +21,8 @@ class Pc: ObservableObject, Creature, Codable {
     @Published var hp = 10
     @Published var mhp = 10
     @Published var weapon: Weapon?
-    @Published var shield: Shield?
     @Published var armor: Armor?
     @Published var uneWeapons = [Weapon]()
-    @Published var uneShields = [Shield]()
     @Published var uneArmors = [Armor]()
     @Published var ps: [PassiveSkill] = [.persuation]
     @Published var money = 0
@@ -49,10 +47,8 @@ class Pc: ObservableObject, Creature, Codable {
         try container.encode(hp, forKey: .hp)
         try container.encode(mhp, forKey: .mhp)
         try container.encode(weapon, forKey: .weapon)
-        try container.encode(shield, forKey: .shield)
         try container.encode(armor, forKey: .armor)
         try container.encode(uneWeapons, forKey: .uneWeapons)
-        try container.encode(uneShields, forKey: .uneShields)
         try container.encode(uneArmors, forKey: .uneArmors)
         try container.encode(ps, forKey: .ps)
         try container.encode(money, forKey: .money)
@@ -75,10 +71,8 @@ class Pc: ObservableObject, Creature, Codable {
         hp = try container.decode(Int.self, forKey: .hp)
         mhp = try container.decode(Int.self, forKey: .mhp)
         weapon = try container.decodeIfPresent(Weapon.self, forKey: .weapon)
-        shield = try container.decodeIfPresent(Shield.self, forKey: .shield)
         armor = try container.decodeIfPresent(Armor.self, forKey: .armor)
         uneWeapons = try container.decode([Weapon].self, forKey: .uneWeapons)
-        uneShields = try container.decode([Shield].self, forKey: .uneShields)
         uneArmors = try container.decode([Armor].self, forKey: .uneArmors)
         ps = try container.decode([PassiveSkill].self, forKey: .ps)
         money = try container.decode(Int.self, forKey: .money)
@@ -101,7 +95,7 @@ class Pc: ObservableObject, Creature, Codable {
     
     var ac: Int {
         // armor class = 10 + dexMod + shieldAc + armorAc
-        return 10 + dex.modifier + (shield?.ac ?? 0) + (armor?.ac ?? 0)
+        return 10 + dex.modifier + (armor?.ac ?? 0)
     }
     
     var requiredExp: Int {
@@ -133,10 +127,8 @@ class Pc: ObservableObject, Creature, Codable {
         hp = pc.hp
         mhp = pc.mhp
         weapon = pc.weapon
-        shield = pc.shield
         armor = pc.armor
         uneWeapons = pc.uneWeapons
-        uneShields = pc.uneShields
         uneArmors = pc.uneArmors
         ps = pc.ps
         money = pc.money
