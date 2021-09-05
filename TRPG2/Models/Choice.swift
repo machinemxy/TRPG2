@@ -24,4 +24,5 @@ enum ChoiceType: String, Codable {
     case person
     case object
     case action
+    case place
 }

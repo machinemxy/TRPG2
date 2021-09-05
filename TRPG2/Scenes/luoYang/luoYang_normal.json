@@ -1,0 +1,30 @@
+{
+  "luoYang":
+  {
+    "name":"Luo Yang City",
+    "detail":"The capital of Dynasty Han.",
+    "choices":
+    [
+      {
+        "choiceType":"place",
+        "name":"Palace",
+        "destination":{"sceneName":"outOfPalace2","subSceneName":"outOfPalace"}
+      },
+      {
+        "choiceType":"place",
+        "name":"Cao Cao's mansion",
+        "destination":{"sceneName":"caoCaoMansion","subSceneName":"entrance"}
+      },
+      {
+        "choiceType":"place",
+        "name":"Wang Yun's mansion",
+        "destination":{"sceneName":"wangYunMansion","subSceneName":"entrance"}
+      },
+      {
+        "choiceType":"place",
+        "name":"Dong Zhuo's mansion",
+        "destination":{"sceneName":"dongZhuoMansion","subSceneName":"entrance"}
+      }
+    ]
+  }
+}

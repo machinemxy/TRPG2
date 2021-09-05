@@ -1,0 +1,33 @@
+{
+  "entrance":
+  {
+    "name":"Entrance",
+    "detail":"Entrance of Cao Cao's mansion. It's home's smell.",
+    "choices":
+    [
+      {
+        "choiceType":"person",
+        "name":"Doorkeeper",
+        "destination":{"subSceneName":"doorkeeper"}
+      },
+      {
+        "choiceType":"action",
+        "name":"Enter",
+        "destination":{"subSceneName":"room"}
+      }
+    ]
+  },
+  "doorkeeper":
+  {
+    "name":"Doorkeeper:",
+    "detail":"\"Welcome back, my lord.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"End conversation",
+        "destination":{"subSceneName":"entrance"}
+      }
+    ]
+  }
+}

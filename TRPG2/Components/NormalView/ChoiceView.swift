@@ -20,6 +20,8 @@ struct ChoiceView: View {
             return "cube"
         case .action:
             return "figure.walk"
+        case .place:
+            return "house"
         }
     }
     

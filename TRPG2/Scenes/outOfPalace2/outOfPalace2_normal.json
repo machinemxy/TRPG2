@@ -15,7 +15,36 @@
         "name":"Brave minister",
         "destination":{"subSceneName":"braveMinister"},
         "appearCondition":{"id":0,"value":0}
-  	  }
+  	  },
+      {
+        "choiceType":"person",
+        "name":"Wang Yun",
+        "destination":{"subSceneName":"wangYun"},
+        "appearCondition":{"id":1,"value":0}
+  	  },
+      {
+        "choiceType":"object",
+        "name":"Guillotine",
+        "destination":{"subSceneName":"guillotine"},
+        "appearCondition":{"id":0,"value":0}
+      },
+      {
+        "choiceType":"object",
+        "name":"Guillotine",
+        "destination":{"subSceneName":"guillotine"},
+        "appearCondition":{"id":0,"value":2}
+      },
+      {
+        "choiceType":"object",
+        "name":"Guillotine",
+        "destination":{"subSceneName":"guillotine2"},
+        "appearCondition":{"id":0,"value":1}
+      },
+      {
+        "choiceType":"action",
+        "name":"Leave",
+        "destination":{"sceneName":"luoYang","subSceneName":"luoYang"}
+      }
     ]
   },
   "guard":
@@ -54,9 +83,49 @@
     [
       {
         "choiceType":"action",
-        "name":"Continue",
+        "name":"End conversation",
         "destination":{"subSceneName":"outOfPalace"}
   	  }
+    ]
+  },
+  "wangYun":
+  {
+    "name":"Wang Yun:",
+    "detail":"\"I can feel you are also hate Dong Zhuo and brave enough to fight against him. Come to my house and let's discuss about the plan!\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"End conversation",
+        "destination":{"subSceneName":"outOfPalace"},
+        "variableChange":{"id":1,"value":1}
+  	  }
+    ]
+  },
+  "guillotine":
+  {
+    "name":"Guillotine",
+    "detail":"Dong Zhuo use it to kill people who opposed to him.",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Look away",
+        "destination":{"subSceneName":"outOfPalace"}
+      }
+    ]
+  },
+  "guillotine2":
+  {
+    "name":"Guillotine",
+    "detail":"Fresh blood is dropping from the guillotine.",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Look away",
+        "destination":{"subSceneName":"outOfPalace"}
+      }
     ]
   }
 }
