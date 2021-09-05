@@ -17,5 +17,10 @@ struct Condition: Codable {
  id 0: If brave minister is alive or dead.
  value 0: Alive
  value 1: Dead
+ value 2: Left
+ --------------------------------------------------
+ id 1: If talked to Wang Yun.
+ value 0: Not talked
+ value 1: Talked
  --------------------------------------------------
  */

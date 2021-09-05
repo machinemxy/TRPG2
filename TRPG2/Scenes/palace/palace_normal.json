@@ -128,7 +128,7 @@
         "choiceType":"action",
         "name":"Continue",
         "destination":{"subSceneName":"dongZhuo7"},
-        "changeCondition":{"id":0,"value":1}
+        "variableChange":{"id":0,"value":1}
       }
     ]
   },

@@ -6,13 +6,19 @@
     "choices":
     [
       {
-        "choiceType":"action",
-        "name":"Enter the palace",
-        "destination":{"subSceneName":"palace"}
+        "choiceType":"person",
+        "name":"Guard",
+        "destination":{"subSceneName":"guard"}
+  	  },
+      {
+        "choiceType":"person",
+        "name":"Brave minister",
+        "destination":{"subSceneName":"braveMinister"},
+        "appearCondition":{"id":0,"value":0}
   	  }
     ]
   },
-  "palace":
+  "guard":
   {
     "name":"Guard:",
     "detail":"\"The morning meeting is end. You shall not enter the palace again.\"",
@@ -21,6 +27,34 @@
       {
         "choiceType":"action",
         "name":"Leave",
+        "destination":{"subSceneName":"outOfPalace"}
+  	  }
+    ]
+  },
+  "braveMinister":
+  {
+    "name":"Brave Minister:",
+    "detail":"\"Thank you for saving my life. I've been disappointed at our dynasty. I'll leave this place.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Continue",
+        "destination":{"subSceneName":"braveMinister2"},
+        "variableChange":{"id":0,"value":2},
+        "expChange":100
+  	  }
+    ]
+  },
+  "braveMinister2":
+  {
+    "name":"Voice-over",
+    "detail":"You gained 100 experience.",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Continue",
         "destination":{"subSceneName":"outOfPalace"}
   	  }
     ]

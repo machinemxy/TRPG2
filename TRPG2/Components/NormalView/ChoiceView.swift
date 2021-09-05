@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ChoiceView: View {
+    @EnvironmentObject var pc: Pc
     @EnvironmentObject var gameData: GameData
     let choice: Choice
     
@@ -25,8 +26,12 @@ struct ChoiceView: View {
     var body: some View {
         HStack {
             Button(action: {
-                if let changeConditon = choice.changeCondition {
-                    gameData.variables[changeConditon.id] = changeConditon.value
+                if let variableChange = choice.variableChange {
+                    gameData.variables[variableChange.id] = variableChange.value
+                }
+                
+                if let expChange = choice.expChange {
+                    pc.exp += expChange
                 }
                 
                 let destination = choice.destination
@@ -51,6 +56,7 @@ struct ChoiceView: View {
 struct ChoiceView_Previews: PreviewProvider {
     static var previews: some View {
         ChoiceView(choice: Choice.example)
+            .environmentObject(Pc())
             .environmentObject(GameData())
     }
 }
