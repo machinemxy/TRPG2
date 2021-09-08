@@ -11,7 +11,6 @@ struct Weapon: Codable {
     let name: String
     let damage: Damage
     let hb: Int
-    let price: Int
     
-    static let fist = Weapon(name: "fist", damage: Damage(a: 1, b: 2, c: 0), hb: 0, price: 0)
+    static let fist = Weapon(name: "fist", damage: Damage(a: 1, b: 2, c: 0), hb: 0)
 }

@@ -12,7 +12,7 @@
       },
       {
         "choiceType":"action",
-        "name":"Enter",
+        "name":"Enter room",
         "destination":{"subSceneName":"room"}
       },
       {
@@ -47,8 +47,16 @@
         "destination":{"subSceneName":"rest"}
       },
       {
+        "choiceType":"object",
+        "name":"Long sword",
+        "destination":{"subSceneName":"sword"},
+        "appearCondition":{"id":2,"value":0},
+        "variableChange":{"id":2,"value":1},
+        "getWeapon":{"name":"long sword","damage":{"a":1,"b":10,"c":0},"hb":0}
+      },
+      {
         "choiceType":"action",
-        "name":"Leave",
+        "name":"Exit room",
         "destination":{"subSceneName":"entrance"}
       }
     ]
@@ -62,6 +70,19 @@
       {
         "choiceType":"action",
         "name":"Get up",
+        "destination":{"subSceneName":"room"}
+      }
+    ]
+  },
+  "sword":
+  {
+    "name":"Voice-over",
+    "detail":"You picked up the long sword",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"OK",
         "destination":{"subSceneName":"room"}
       }
     ]

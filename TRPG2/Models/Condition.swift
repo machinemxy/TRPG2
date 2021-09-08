@@ -23,4 +23,8 @@ struct Condition: Codable {
  value 0: Not talked
  value 1: Talked
  --------------------------------------------------
+ id 2: If got long sword
+ value 0: Not got
+ value 1: Got
+ --------------------------------------------------
  */

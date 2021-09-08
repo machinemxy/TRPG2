@@ -25,7 +25,6 @@ class Pc: ObservableObject, Creature, Codable {
     @Published var uneWeapons = [Weapon]()
     @Published var uneArmors = [Armor]()
     @Published var ps: [PassiveSkill] = [.persuation]
-    @Published var money = 0
     
     // MARK: codable
     enum Ck: CodingKey {
@@ -51,7 +50,6 @@ class Pc: ObservableObject, Creature, Codable {
         try container.encode(uneWeapons, forKey: .uneWeapons)
         try container.encode(uneArmors, forKey: .uneArmors)
         try container.encode(ps, forKey: .ps)
-        try container.encode(money, forKey: .money)
     }
     
     init() {}
@@ -75,7 +73,6 @@ class Pc: ObservableObject, Creature, Codable {
         uneWeapons = try container.decode([Weapon].self, forKey: .uneWeapons)
         uneArmors = try container.decode([Armor].self, forKey: .uneArmors)
         ps = try container.decode([PassiveSkill].self, forKey: .ps)
-        money = try container.decode(Int.self, forKey: .money)
     }
     
     // MARK: calculated properties
@@ -131,6 +128,5 @@ class Pc: ObservableObject, Creature, Codable {
         uneWeapons = pc.uneWeapons
         uneArmors = pc.uneArmors
         ps = pc.ps
-        money = pc.money
     }
 }

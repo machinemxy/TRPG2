@@ -10,5 +10,4 @@ import Foundation
 struct Armor: Codable {
     let name: String
     let ac: Int
-    let price: Int
 }

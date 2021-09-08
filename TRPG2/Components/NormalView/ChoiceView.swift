@@ -38,6 +38,10 @@ struct ChoiceView: View {
                     pc.exp += expChange
                 }
                 
+                if let weapon = choice.getWeapon {
+                    pc.uneWeapons.append(weapon)
+                }
+                
                 if choice.choiceType == .rest {
                     pc.hp = pc.mhp
                 }
