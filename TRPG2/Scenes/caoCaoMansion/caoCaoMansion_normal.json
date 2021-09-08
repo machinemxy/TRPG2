@@ -2,7 +2,7 @@
   "entrance":
   {
     "name":"Entrance",
-    "detail":"Entrance of Cao Cao's mansion. It's home's smell.",
+    "detail":"Entrance of your mansion.",
     "choices":
     [
       {
@@ -14,6 +14,11 @@
         "choiceType":"action",
         "name":"Enter",
         "destination":{"subSceneName":"room"}
+      },
+      {
+        "choiceType":"action",
+        "name":"Leave",
+        "destination":{"sceneName":"luoYang","subSceneName":"luoYang"}
       }
     ]
   },
@@ -27,6 +32,37 @@
         "choiceType":"action",
         "name":"End conversation",
         "destination":{"subSceneName":"entrance"}
+      }
+    ]
+  },
+  "room":
+  {
+    "name":"Room",
+    "detail":"Your room.",
+    "choices":
+    [
+      {
+        "choiceType":"rest",
+        "name":"Rest on bed",
+        "destination":{"subSceneName":"rest"}
+      },
+      {
+        "choiceType":"action",
+        "name":"Leave",
+        "destination":{"subSceneName":"entrance"}
+      }
+    ]
+  },
+  "rest":
+  {
+    "name":"Voice-over",
+    "detail":"You get fully recovered.",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Get up",
+        "destination":{"subSceneName":"room"}
       }
     ]
   }

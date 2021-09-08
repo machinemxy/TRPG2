@@ -22,6 +22,8 @@ struct ChoiceView: View {
             return "figure.walk"
         case .place:
             return "house"
+        case .rest:
+            return "bed.double"
         }
     }
     
@@ -34,6 +36,10 @@ struct ChoiceView: View {
                 
                 if let expChange = choice.expChange {
                     pc.exp += expChange
+                }
+                
+                if choice.choiceType == .rest {
+                    pc.hp = pc.mhp
                 }
                 
                 let destination = choice.destination
