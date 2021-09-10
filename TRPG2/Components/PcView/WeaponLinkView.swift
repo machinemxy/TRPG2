@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WeaponLinkView: View {
-	var weapon: Weapon
+	let weapon: Weapon
 	
     var body: some View {
 		NavigationLink(
