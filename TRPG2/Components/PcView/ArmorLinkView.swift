@@ -2,7 +2,7 @@
 //  ArmorLinkView.swift
 //  TRPG2
 //
-//  Created by Ma, Xueyuan | MTSD on 2021/09/10.
+//  Created by Ma, Xueyuan on 2021/09/10.
 //
 
 import SwiftUI
