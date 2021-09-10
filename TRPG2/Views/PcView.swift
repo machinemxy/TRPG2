@@ -35,8 +35,8 @@ struct PcView: View {
             }
             
             Section(header: Text("Combat")) {
-                KeyValueView(key: "Weapon", value: pc.weapon?.name ?? "fist")
-                KeyValueView(key: "Armor", value: pc.armor?.name ?? "unequipped")
+				WeaponLinkView(weapon: pc.weapon)
+				ArmorLinkView(armor: pc.armor)
                 KeyValueView(key: "Hit bonus", value: "\(pc.hb)")
                 KeyValueView(key: "Damage", value: pc.damage.description)
                 KeyValueView(key: "Armor class", value: "\(pc.ac)")

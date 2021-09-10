@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct Armor: Codable {
+struct Armor: Codable, Identifiable {
+	let id: Int
     let name: String
     let ac: Int
+	
+	static let unequipped = Armor(id: 0, name: "unequipped", ac: 0)
 }

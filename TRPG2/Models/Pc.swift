@@ -20,8 +20,8 @@ class Pc: ObservableObject, Creature, Codable {
     @Published var exp = 0
     @Published var hp = 10
     @Published var mhp = 10
-    @Published var weapon: Weapon?
-    @Published var armor: Armor?
+	@Published var weapon = Weapon.unequipped
+	@Published var armor = Armor.unequipped
     @Published var uneWeapons = [Weapon]()
     @Published var uneArmors = [Armor]()
     @Published var ps: [PassiveSkill] = [.persuation]
@@ -68,8 +68,8 @@ class Pc: ObservableObject, Creature, Codable {
         exp = try container.decode(Int.self, forKey: .exp)
         hp = try container.decode(Int.self, forKey: .hp)
         mhp = try container.decode(Int.self, forKey: .mhp)
-        weapon = try container.decodeIfPresent(Weapon.self, forKey: .weapon)
-        armor = try container.decodeIfPresent(Armor.self, forKey: .armor)
+        weapon = try container.decode(Weapon.self, forKey: .weapon)
+        armor = try container.decode(Armor.self, forKey: .armor)
         uneWeapons = try container.decode([Weapon].self, forKey: .uneWeapons)
         uneArmors = try container.decode([Armor].self, forKey: .uneArmors)
         ps = try container.decode([PassiveSkill].self, forKey: .ps)
@@ -80,19 +80,17 @@ class Pc: ObservableObject, Creature, Codable {
     
     var hb: Int {
         // hit bonus = strMod + proficiency + weaponHb
-        let wrappedWeapon = weapon ?? Weapon.fist
-        return str.modifier + proficiency + wrappedWeapon.hb
+        return str.modifier + proficiency + weapon.hb
     }
     
     var damage: Damage {
-        let wrappedWeapon = weapon ?? Weapon.fist
-        let wd = wrappedWeapon.damage
+        let wd = weapon.damage
         return Damage(a: wd.a, b: wd.b, c: wd.c + str.modifier)
     }
     
     var ac: Int {
-        // armor class = 10 + dexMod + shieldAc + armorAc
-        return 10 + dex.modifier + (armor?.ac ?? 0)
+        // armor class = 10 + dexMod + armorAc
+		return 10 + dex.modifier + armor.ac
     }
     
     var requiredExp: Int {
