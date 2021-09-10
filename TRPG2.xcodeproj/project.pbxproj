@@ -47,6 +47,8 @@
 		22D0BF5F26E3BF5000D2965D /* RollValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0BF5E26E3BF5000D2965D /* RollValueView.swift */; };
 		22D0BF6326E3C18E00D2965D /* FinalValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0BF6226E3C18E00D2965D /* FinalValueView.swift */; };
 		22D0BF6526E3C3F400D2965D /* palace_check.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D0BF6426E3C3F400D2965D /* palace_check.json */; };
+		9203AC2426EAED7B008EE6CB /* WeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203AC2326EAED7B008EE6CB /* WeaponView.swift */; };
+		9203AC2926EAF2EE008EE6CB /* WeaponLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203AC2826EAF2EE008EE6CB /* WeaponLinkView.swift */; };
 		92158BDD26DD277F00C1C91F /* palace_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 92158BDC26DD277F00C1C91F /* palace_normal.json */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,8 @@
 		22D0BF5E26E3BF5000D2965D /* RollValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollValueView.swift; sourceTree = "<group>"; };
 		22D0BF6226E3C18E00D2965D /* FinalValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueView.swift; sourceTree = "<group>"; };
 		22D0BF6426E3C3F400D2965D /* palace_check.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palace_check.json; sourceTree = "<group>"; };
+		9203AC2326EAED7B008EE6CB /* WeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponView.swift; sourceTree = "<group>"; };
+		9203AC2826EAF2EE008EE6CB /* WeaponLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponLinkView.swift; sourceTree = "<group>"; };
 		92158BDC26DD277F00C1C91F /* palace_normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palace_normal.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +246,7 @@
 				22BB49B526E35011005EDD44 /* CheckView.swift */,
 				22BB49AD26E10C48005EDD44 /* ExtraOptionsView.swift */,
 				22BB49B126E2677E005EDD44 /* PcView.swift */,
+				9203AC2326EAED7B008EE6CB /* WeaponView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 		2298D8F826CAAF20000A22F5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				92C97CB926EADF7F008EA755 /* PcView */,
 				2266299326E49B14008A3488 /* CheckView */,
 				2266299226E49AE9008A3488 /* NormalView */,
 				2298D8F926CAB078000A22F5 /* KeyValueView.swift */,
@@ -345,6 +351,14 @@
 				22D0BF6426E3C3F400D2965D /* palace_check.json */,
 			);
 			path = palace;
+			sourceTree = "<group>";
+		};
+		92C97CB926EADF7F008EA755 /* PcView */ = {
+			isa = PBXGroup;
+			children = (
+				9203AC2826EAF2EE008EE6CB /* WeaponLinkView.swift */,
+			);
+			path = PcView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +499,7 @@
 			files = (
 				228297D226CD4A7800C1D2C3 /* Armor.swift in Sources */,
 				228297D726CD557B00C1D2C3 /* Damage.swift in Sources */,
+				9203AC2926EAF2EE008EE6CB /* WeaponLinkView.swift in Sources */,
 				228297CE26CD265800C1D2C3 /* Weapon.swift in Sources */,
 				228297D526CD53B700C1D2C3 /* IntExt.swift in Sources */,
 				221F785B26D3B5CD00042ACF /* Destination.swift in Sources */,
@@ -492,6 +507,7 @@
 				2298D8FD26CAB1C0000A22F5 /* Pc.swift in Sources */,
 				228297CC26CD220800C1D2C3 /* Creature.swift in Sources */,
 				222039CC26D52FE500940EB8 /* NormalView.swift in Sources */,
+				9203AC2426EAED7B008EE6CB /* WeaponView.swift in Sources */,
 				22D0BF6326E3C18E00D2965D /* FinalValueView.swift in Sources */,
 				222039CA26D52CCE00940EB8 /* BundleExt.swift in Sources */,
 				221F785F26D3BAD800042ACF /* NormalScene.swift in Sources */,
