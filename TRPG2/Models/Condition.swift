@@ -27,4 +27,8 @@ struct Condition: Codable {
  value 0: Not got
  value 1: Got
  --------------------------------------------------
+ id 3: If got leather armor
+ value 0: Not got
+ value 1: Got
+ --------------------------------------------------
  */

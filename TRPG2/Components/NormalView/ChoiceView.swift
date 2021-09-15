@@ -41,6 +41,10 @@ struct ChoiceView: View {
                 if let weapon = choice.getWeapon {
                     pc.uneWeapons.append(weapon)
                 }
+				
+				if let armor = choice.getArmor {
+					pc.uneArmors.append(armor)
+				}
                 
                 if choice.choiceType == .rest {
                     pc.hp = pc.mhp

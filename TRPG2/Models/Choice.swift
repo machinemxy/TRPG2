@@ -15,10 +15,11 @@ struct Choice: Codable, Identifiable {
     let variableChange: Condition?
     let expChange: Int?
     let getWeapon: Weapon?
+	let getArmor: Armor?
     
     var id: String { name }
     
-    static let example = Choice(choiceType: .action, name: "Back", destination: Destination(sceneType: nil, sceneName: nil, subSceneName: "outOfPalace"), appearCondition: nil, variableChange: nil, expChange: nil, getWeapon: nil)
+    static let example = Choice(choiceType: .action, name: "Back", destination: Destination(sceneType: nil, sceneName: nil, subSceneName: "outOfPalace"), appearCondition: nil, variableChange: nil, expChange: nil, getWeapon: nil, getArmor: nil)
 }
 
 enum ChoiceType: String, Codable {

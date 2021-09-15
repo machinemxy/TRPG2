@@ -55,6 +55,14 @@
         "getWeapon":{"id":1,"name":"long sword","damage":{"a":1,"b":10,"c":0},"hb":0}
       },
       {
+        "choiceType":"object",
+        "name":"Leather armor",
+        "destination":{"subSceneName":"armor"},
+        "appearCondition":{"id":3,"value":0},
+        "variableChange":{"id":3,"value":1},
+        "getArmor":{"id":1,"name":"leather armor","ac":1}
+      },
+      {
         "choiceType":"action",
         "name":"Exit room",
         "destination":{"subSceneName":"entrance"}
@@ -78,6 +86,19 @@
   {
     "name":"Voice-over",
     "detail":"You picked up the long sword",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"OK",
+        "destination":{"subSceneName":"room"}
+      }
+    ]
+  },
+  "armor":
+  {
+    "name":"Voice-over",
+    "detail":"You picked up the leather armor",
     "choices":
     [
       {
