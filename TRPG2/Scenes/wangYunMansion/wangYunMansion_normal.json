@@ -1,0 +1,54 @@
+{
+  "entrance":
+  {
+    "name":"Entrance",
+    "detail":"Entrance of Wang Yun's mansion.",
+    "choices":
+    [
+      {
+        "choiceType":"person",
+        "name":"Doorkeeper",
+        "destination":{"subSceneName":"doorkeeperRefuse"},
+        "appearCondition":{"id":1,"value":0}
+      },
+      {
+        "choiceType":"person",
+        "name":"Doorkeeper",
+        "destination":{"subSceneName":"doorkeeper"},
+        "appearCondition":{"id":1,"value":1}
+      },
+      {
+        "choiceType":"action",
+        "name":"Enter",
+        "destination":{"subSceneName":"garden"},
+        "appearCondition":{"id":1,"value":1}
+      }
+    ]
+  },
+  "doorkeeperRefuse":
+  {
+    "name":"Doorkeeper:",
+    "detail":"\"You shall not enter until getting my lord's invitation.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"End conversation",
+        "destination":{"subSceneName":"entrance"}
+      }
+    ]
+  },
+  "doorkeeper":
+  {
+    "name":"Doorkeeper:",
+    "detail":"\"My lord is waiting for you. Please enter.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"End conversation",
+        "destination":{"subSceneName":"entrance"}
+      }
+    ]
+  }
+}

@@ -52,6 +52,7 @@
 		9203AC2E26EB0069008EE6CB /* ArmorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203AC2D26EB0069008EE6CB /* ArmorView.swift */; };
 		9203AC3326EB0087008EE6CB /* ArmorLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203AC3226EB0087008EE6CB /* ArmorLinkView.swift */; };
 		92158BDD26DD277F00C1C91F /* palace_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 92158BDC26DD277F00C1C91F /* palace_normal.json */; };
+		9272B0DE26F1D82A001CBF26 /* wangYunMansion_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 9272B0DD26F1D82A001CBF26 /* wangYunMansion_normal.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		9203AC2D26EB0069008EE6CB /* ArmorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorView.swift; sourceTree = "<group>"; };
 		9203AC3226EB0087008EE6CB /* ArmorLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorLinkView.swift; sourceTree = "<group>"; };
 		92158BDC26DD277F00C1C91F /* palace_normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palace_normal.json; sourceTree = "<group>"; };
+		9272B0DD26F1D82A001CBF26 /* wangYunMansion_normal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wangYunMansion_normal.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		221F786226D3DC0000042ACF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9272B0DC26F1D76E001CBF26 /* wangYunMansion */,
 				2266299726E51A82008A3488 /* caoCaoMansion */,
 				2266299426E51763008A3488 /* luoYang */,
 				92158BDB26DD26A900C1C91F /* palace */,
@@ -358,6 +361,14 @@
 			path = palace;
 			sourceTree = "<group>";
 		};
+		9272B0DC26F1D76E001CBF26 /* wangYunMansion */ = {
+			isa = PBXGroup;
+			children = (
+				9272B0DD26F1D82A001CBF26 /* wangYunMansion_normal.json */,
+			);
+			path = wangYunMansion;
+			sourceTree = "<group>";
+		};
 		92C97CB926EADF7F008EA755 /* PcView */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +487,7 @@
 				2266299626E5177A008A3488 /* luoYang_normal.json in Resources */,
 				92158BDD26DD277F00C1C91F /* palace_normal.json in Resources */,
 				222039C326D518CA00940EB8 /* gameOver_normal.json in Resources */,
+				9272B0DE26F1D82A001CBF26 /* wangYunMansion_normal.json in Resources */,
 				222039C626D51B1E00940EB8 /* outOfPalace_normal.json in Resources */,
 				22D0BF6526E3C3F400D2965D /* palace_check.json in Resources */,
 				22AF6A2C25AB3F060035CC95 /* Assets.xcassets in Resources */,
