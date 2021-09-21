@@ -22,6 +22,11 @@
         "name":"Enter",
         "destination":{"subSceneName":"garden"},
         "appearCondition":{"id":1,"value":1}
+      },
+      {
+        "choiceType":"action",
+        "name":"Leave",
+        "destination":{"sceneName":"luoYang","subSceneName":"luoYang"}
       }
     ]
   },
@@ -48,6 +53,91 @@
         "choiceType":"action",
         "name":"End conversation",
         "destination":{"subSceneName":"entrance"}
+      }
+    ]
+  },
+  "garden":
+  {
+    "name":"Garden",
+    "detail":"Wang Yun's garden. There are a lot of plants.",
+    "choices":
+    [
+      {
+        "choiceType":"person",
+        "name":"Diao Chan",
+        "destination":{"subSceneName":"diaoChan"}
+      },
+      {
+        "choiceType":"place",
+        "name":"Wang Yun's room",
+        "destination":{"subSceneName":"room"}
+      },
+      {
+        "choiceType":"place",
+        "name":"Shrine",
+        "destination":{"subSceneName":"shrine"}
+      },
+      {
+        "choiceType":"place",
+        "name":"Entrance of mansion",
+        "destination":{"subSceneName":"entrance"}
+      }
+    ]
+  },
+  "diaoChan":
+  {
+    "name":"Diao Chan:",
+    "detail":"\"I'm Wang Yun's adopted child. My father is waiting for you inside the room. Please enter.\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Continue",
+        "destination":{"subSceneName":"diaoChan2"}
+      }
+    ]
+  },
+  "diaoChan2":
+  {
+    "name":"Voice-over",
+    "detail":"She is so beautiful that you can't help to keep looking at her.",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"Look away",
+        "destination":{"subSceneName":"garden"}
+      }
+    ]
+  },
+  "room":
+  {
+    "name":"Room",
+    "detail":"Wang Yun's room. It is a very clean room.",
+    "choices":
+    [
+      {
+        "choiceType":"person",
+        "name":"Wang Yun",
+        "destination":{"subSceneName":"wangYun"}
+      },
+      {
+        "choiceType":"action",
+        "name":"Exit room",
+        "destination":{"subSceneName":"garden"}
+      }
+    ]
+  },
+  "wangYun":
+  {
+    "name":"Wang Yun:",
+    "detail":"\"I know you will come. There is an ancestral sword in the shrine. Take it and use it to kill Dong Zhuo!\"",
+    "choices":
+    [
+      {
+        "choiceType":"action",
+        "name":"End conversation",
+        "destination":{"subSceneName":"room"}
       }
     ]
   }
