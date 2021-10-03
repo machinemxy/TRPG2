@@ -140,5 +140,14 @@
         "destination":{"subSceneName":"room"}
       }
     ]
+  },
+  "shrine":
+  {
+    "name":"Shrine Entrance",
+    "detail":"Entrance of shrine. The ancestors of the Wang family are enshrined inside.",
+    "choices":
+    [
+
+    ]
   }
 }
