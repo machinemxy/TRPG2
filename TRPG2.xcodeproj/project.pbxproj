@@ -44,6 +44,9 @@
 		22BB49B426E269B1005EDD44 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B326E269B1005EDD44 /* StringExt.swift */; };
 		22BB49B626E35011005EDD44 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B526E35011005EDD44 /* CheckView.swift */; };
 		22BB49B826E35544005EDD44 /* CheckScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB49B726E35544005EDD44 /* CheckScene.swift */; };
+		22CAE231270F2C9400425845 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAE230270F2C9400425845 /* BattleView.swift */; };
+		22CAE233270F369A00425845 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAE232270F369A00425845 /* Enemy.swift */; };
+		22CAE235270F36EB00425845 /* WangYunMansion_battle.json in Resources */ = {isa = PBXBuildFile; fileRef = 22CAE234270F36EB00425845 /* WangYunMansion_battle.json */; };
 		22D0BF5F26E3BF5000D2965D /* RollValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0BF5E26E3BF5000D2965D /* RollValueView.swift */; };
 		22D0BF6326E3C18E00D2965D /* FinalValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0BF6226E3C18E00D2965D /* FinalValueView.swift */; };
 		22D0BF6526E3C3F400D2965D /* palace_check.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D0BF6426E3C3F400D2965D /* palace_check.json */; };
@@ -116,6 +119,9 @@
 		22BB49B326E269B1005EDD44 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		22BB49B526E35011005EDD44 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		22BB49B726E35544005EDD44 /* CheckScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckScene.swift; sourceTree = "<group>"; };
+		22CAE230270F2C9400425845 /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		22CAE232270F369A00425845 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		22CAE234270F36EB00425845 /* WangYunMansion_battle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WangYunMansion_battle.json; sourceTree = "<group>"; };
 		22D0BF5E26E3BF5000D2965D /* RollValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollValueView.swift; sourceTree = "<group>"; };
 		22D0BF6226E3C18E00D2965D /* FinalValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalValueView.swift; sourceTree = "<group>"; };
 		22D0BF6426E3C3F400D2965D /* palace_check.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palace_check.json; sourceTree = "<group>"; };
@@ -255,6 +261,7 @@
 				22BB49B126E2677E005EDD44 /* PcView.swift */,
 				9203AC2326EAED7B008EE6CB /* WeaponView.swift */,
 				9203AC2D26EB0069008EE6CB /* ArmorView.swift */,
+				22CAE230270F2C9400425845 /* BattleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,6 +283,7 @@
 				2298D8FC26CAB1C0000A22F5 /* Pc.swift */,
 				228297D626CD557B00C1D2C3 /* Damage.swift */,
 				228297CB26CD220800C1D2C3 /* Creature.swift */,
+				22CAE232270F369A00425845 /* Enemy.swift */,
 				228297CD26CD265800C1D2C3 /* Weapon.swift */,
 				228297D126CD4A7800C1D2C3 /* Armor.swift */,
 				228297D826CD593800C1D2C3 /* PassiveSkill.swift */,
@@ -365,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				9272B0DD26F1D82A001CBF26 /* wangYunMansion_normal.json */,
+				22CAE234270F36EB00425845 /* WangYunMansion_battle.json */,
 			);
 			path = wangYunMansion;
 			sourceTree = "<group>";
@@ -484,6 +493,7 @@
 				2266299926E51A9E008A3488 /* caoCaoMansion_normal.json in Resources */,
 				22AF6A2F25AB3F060035CC95 /* Preview Assets.xcassets in Resources */,
 				22637DE026DE6E3B00723DED /* outOfPalace2_normal.json in Resources */,
+				22CAE235270F36EB00425845 /* WangYunMansion_battle.json in Resources */,
 				2266299626E5177A008A3488 /* luoYang_normal.json in Resources */,
 				92158BDD26DD277F00C1C91F /* palace_normal.json in Resources */,
 				222039C326D518CA00940EB8 /* gameOver_normal.json in Resources */,
@@ -547,6 +557,8 @@
 				22BB49B826E35544005EDD44 /* CheckScene.swift in Sources */,
 				229F93C226D1436200EA90BE /* GameData.swift in Sources */,
 				2298D8FA26CAB078000A22F5 /* KeyValueView.swift in Sources */,
+				22CAE233270F369A00425845 /* Enemy.swift in Sources */,
+				22CAE231270F2C9400425845 /* BattleView.swift in Sources */,
 				22AF6A2825AB3F050035CC95 /* TRPG2App.swift in Sources */,
 				22BB49B626E35011005EDD44 /* CheckView.swift in Sources */,
 			);

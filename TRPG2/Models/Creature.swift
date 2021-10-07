@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Creature: AnyObject {
+protocol Creature {
     var name: String { get }
     var str: Int { get }
     var dex: Int { get }
