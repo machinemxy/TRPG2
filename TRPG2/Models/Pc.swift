@@ -24,7 +24,7 @@ class Pc: ObservableObject, Creature, Codable {
 	@Published var armor = Armor.unequipped
     @Published var uneWeapons = [Weapon]()
     @Published var uneArmors = [Armor]()
-    @Published var ps: [PassiveSkill] = [.persuation]
+    @Published var ps: [PassiveSkill] = [.persuasion]
     
     // MARK: codable
     enum Ck: CodingKey {

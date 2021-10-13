@@ -14,22 +14,22 @@ struct CheckScene: Codable {
     let whenFail: Destination
     let isSecret: Bool
     
-    static let fallBack = CheckScene(checkType: .persuation, targetValue: 15, whenSucceed: Destination.gameOver, whenFail: Destination.gameOver, isSecret: true)
+    static let fallBack = CheckScene(checkType: .persuasion, targetValue: 15, whenSucceed: Destination.gameOver, whenFail: Destination.gameOver, isSecret: true)
 }
 
 enum CheckType: String, Codable {
-    case persuation
+    case persuasion
     
     var checkViewTitle: String {
         switch self {
-        case .persuation:
-            return "Persuation Check"
+        case .persuasion:
+            return "Persuasion Check"
         }
     }
     
     var abilityBonusText: String {
         switch self {
-        case .persuation:
+        case .persuasion:
             return "Charisma bonus"
         }
     }

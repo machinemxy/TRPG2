@@ -145,7 +145,7 @@
       }
     ]
   },
-  "persuationFail":
+  "persuasionFail":
   {
     "name":"Dong Zhuo:",
     "detail":"\"Enough! My mind won't change!\"",
@@ -158,7 +158,7 @@
       }
     ]
   },
-  "persuationSucceed":
+  "persuasionSucceed":
   {
     "name":"Dong Zhuo:",
     "detail":"\"OK, I'll spare his dog-like life. But he is fired. I don't want to see him again.\"",

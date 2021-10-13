@@ -18,15 +18,15 @@ struct CheckView: View {
     
     var abilityBonus: Int {
         switch scene.checkType {
-        case .persuation:
+        case .persuasion:
             return pc.cha.modifier
         }
     }
     
     var proficiencyBonus: Int {
         switch scene.checkType {
-        case .persuation:
-            if pc.ps.contains(.persuation) {
+        case .persuasion:
+            if pc.ps.contains(.persuasion) {
                 return pc.proficiency
             } else {
                 return 0
